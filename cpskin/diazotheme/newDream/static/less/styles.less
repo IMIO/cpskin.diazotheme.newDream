@@ -1,0 +1,60 @@
+//HEADER
+#top-actions{
+    background: @header-actions;
+}
+#top-actions-inner a{
+    color: @header-actions-color;
+    &:hover{
+        color: @header-actions-color;
+    }
+}
+//NAVIGATION
+#top-navigation-inner {
+     display: flex;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+#portal-header #navWrapper {
+    flex: 1 1 0;
+    align-self: center;
+}
+#portal-globalnav .selected a,
+#portal-globalnav .selected a:hover,
+#portal-globalnav a:hover,
+#portal-globalnav li a.activated{		
+		color: @nav-onglet-color-hover;
+}
+//submenu
+.portal-globalnav-cpskinmenu.navTreeLevel0 {
+    background: @sub-menu-bg;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sf-menu ul{
+    &.navTreeLevel1,
+    &.navTreeLevel2,
+    &.navTreeLevel3{
+        background: @sub-menu-bg;
+    }
+}
+.sf-menu ul.direct_access{
+    background: @sub-menu-bg !important;
+}
+//BANNER
+
+//HOMEPAGE
+
+
+
+
+
+
+//FOTER
+
+
+//FACETED
+//widget

@@ -2,10 +2,6 @@
 <rules xmlns="http://namespaces.plone.org/diazo"
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
-
-  <replace css:content-children="#portaltab-index_html a">
-      <span class="icon-home" />
-  </replace>
   <before css:content="#portal-top">
     <xsl:copy-of select="//*[@id='messagesviewlet']" />
   </before>
@@ -18,6 +14,7 @@
     <xsl:copy-of select="//div[contains(@class, 'slider-top')]" />
   </after>
   <drop css:content="#accueil .slider-top" />
+  <drop css:content="#portaltab-index_html" />
   <!-- Header / banner specific to minisite mode -->
   <rules if="$isinminisitemode">
       <replace css:content-children="#portal-header">

@@ -13,7 +13,7 @@
 
  <stylesheet title="cpskin.diazotheme.newDream LESS Styles"
     id="++theme++cpskin.diazotheme.newDream/less/styles.less"
-    media="all"
+    media="handheld, screen and (min-device-width: 992px), screen and (min-width: 992px)"
     enabled="1"
     rendering="link"
     compression="none"
