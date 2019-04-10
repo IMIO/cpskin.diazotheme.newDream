@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-0.2 (unreleased)
-----------------
+0.1.1 (2019-04-10)
+------------------
 
 - Fix minisite dropdown menu which was hidden : WEB-2976
   [laulaz]
