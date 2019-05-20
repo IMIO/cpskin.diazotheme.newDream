@@ -5,6 +5,9 @@ Changelog
 0.1.2 (unreleased)
 ------------------
 
+- Hide social links : WEB-3027
+  [laulaz]
+
 - Fix search button
   [laulaz]
 
