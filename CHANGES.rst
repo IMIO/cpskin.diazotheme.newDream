@@ -5,6 +5,9 @@ Changelog
 0.1.2 (unreleased)
 ------------------
 
+- Remove footer sitemap at install : WEB-3027
+  [laulaz]
+
 - Remove useless header tag around h1
   [laulaz]
 
