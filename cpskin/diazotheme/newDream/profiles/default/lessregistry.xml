@@ -56,7 +56,7 @@
     enabled="1"
     rendering="link"
     applyPrefix="True"
-    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.newDream'"
     compression="none"
     insert-after="++theme++cpskin.diazotheme.newDream/less/styles.less" />
 
