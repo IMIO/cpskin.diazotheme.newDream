@@ -38,6 +38,10 @@
     id="++theme++cpskin.diazotheme.newDream/less/styles.less"
     remove="True" />
 
+ <stylesheet title="cpskin.diazotheme.newDream LESS Options Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/options.less"
+    remove="True" />
+
  <stylesheet title="CPSkin LESS Contact"
     id="++theme++cpskin.diazotheme.newDream/less/contact.less"
     remove="True" />
