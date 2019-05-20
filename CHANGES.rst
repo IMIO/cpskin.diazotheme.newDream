@@ -5,6 +5,9 @@ Changelog
 0.1.2 (unreleased)
 ------------------
 
+- Remove useless header tag around h1
+  [laulaz]
+
 - Add LESS files and deactivate base theme LESS files : WEB-3027
   [laulaz]
 
