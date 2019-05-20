@@ -5,6 +5,9 @@ Changelog
 0.1.2 (unreleased)
 ------------------
 
+- Fix search button
+  [laulaz]
+
 - Remove right actions feature and move its items : WEB-3027
   [laulaz]
 
