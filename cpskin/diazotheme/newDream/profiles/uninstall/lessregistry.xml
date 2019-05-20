@@ -1,12 +1,61 @@
 <?xml version="1.0"?>
 <object name="portal_less">
 
+ <!-- Reactivate CPSkin theme less files -->
+
+ <stylesheet title="CPSkin LESS Variables"
+    id="++theme++cpskin.theme.base/less/variables.less"
+    enabled="1" />
+
+ <stylesheet title="CPSkin LESS Styles"
+    id="++theme++cpskin.theme.base/less/styles.less"
+    enabled="1" />
+
+ <stylesheet title="CPSkin LESS Contact"
+    id="++theme++cpskin.theme.base/less/contact.less"
+    enabled="1" />
+
+ <stylesheet title="CPSkin LESS Mobile Styles"
+    id="++theme++cpskin.theme.base/less/mobile.less"
+    enabled="1" />
+
+ <stylesheet title="CPSkin LESS Medium Mobile Styles"
+    id="++theme++cpskin.theme.base/less/mobilemedium.less"
+    enabled="1" />
+
+ <stylesheet title="CPSkin LESS Large Mobile Styles"
+    id="++theme++cpskin.theme.base/less/mobilelarge.less"
+    enabled="1" />
+
+
+ <!-- Delete newDream less files -->
+
  <stylesheet title="cpskin.diazotheme.newDream LESS Variables"
     id="++theme++cpskin.diazotheme.newDream/less/variables.less"
     remove="True" />
 
  <stylesheet title="cpskin.diazotheme.newDream LESS Styles"
     id="++theme++cpskin.diazotheme.newDream/less/styles.less"
+    remove="True" />
+
+ <stylesheet title="CPSkin LESS Contact"
+    id="++theme++cpskin.diazotheme.newDream/less/contact.less"
+    remove="True" />
+
+ <stylesheet title="cpskin.diazotheme.newDream LESS Mobile Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/mobile.less"
+    remove="True" />
+
+ <stylesheet title="cpskin.diazotheme.newDream LESS Medium Mobile Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/mobilemedium.less"
+    remove="True" />
+
+ <stylesheet title="cpskin.diazotheme.newDream LESS Large Mobile Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/mobilelarge.less"
+    remove="True" />
+
+ <stylesheet title="cpskin.diazotheme.newDream LESS Full Mobile Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/mobilefull.less"
     remove="True" />
 
 </object>
