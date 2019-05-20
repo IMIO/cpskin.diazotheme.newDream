@@ -20,13 +20,13 @@
   <xi:include href="/++theme++cpskin.theme.base/rules/head.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/footer.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/content.xml"/>
-  <xi:include href="/++theme++cpskin.theme.base/rules/right_actions.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/login.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/annuaire.xml"/>
 
   <!-- Our own rules -->
   <xi:include href="/++theme++cpskin.diazotheme.newDream/rules/structures.xml"/>
   <xi:include href="/++theme++cpskin.diazotheme.newDream/rules/header.xml"/>
+  <xi:include href="/++theme++cpskin.diazotheme.newDream/rules/content.xml"/>
   <xi:include href="/++theme++cpskin.diazotheme.newDream/rules/footer.xml"/>
 
   <!-- Copy over the content -->

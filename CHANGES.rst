@@ -5,6 +5,9 @@ Changelog
 0.1.2 (unreleased)
 ------------------
 
+- Remove right actions feature and move its items : WEB-3027
+  [laulaz]
+
 - Remove footer sitemap at install : WEB-3027
   [laulaz]
 
