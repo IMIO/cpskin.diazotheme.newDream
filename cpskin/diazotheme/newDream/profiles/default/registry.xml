@@ -6,4 +6,8 @@
     <value>False</value>
   </record>
 
+  <record name="cpskin.core.socialviewlet">
+    <value></value>
+  </record>
+
 </registry>
