@@ -110,4 +110,43 @@
     compression="none"
     insert-after="++theme++cpskin.diazotheme.newDream/less/mobilelarge.less" />
 
+ <stylesheet title="cpskin.diazotheme.newDream Header Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/bloc_header.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Banner Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/bloc_banner.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Breadcrumbs Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/bloc_breadcrumbs.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Footer Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/bloc_footer.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Content Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/bloc_content.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Portlet Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/portlet.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Portlet Navigation Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/portlet_navigation.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Index Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/view_index.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Agenda Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/view_agenda.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Event Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/view_event.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Document Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/view_document.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Minisite Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/minisite.less" media="" />
+
+ <stylesheet title="cpskin.diazotheme.newDream Flexslider Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/flexslider.less" media="" />
+
 </object>
