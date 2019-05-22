@@ -10,7 +10,9 @@ html {
 *::after {
     box-sizing: border-box;
 }
-
+img {
+    max-width: 100%;
+}
 body #visual-portal-wrapper {
     float:left;
     width: 100% !important;
@@ -29,7 +31,7 @@ div.position-0 {
     margin-left: -100%;
 }
 
-.imagebackground {
+.image-background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -396,41 +398,6 @@ div.formControls {
     
 }
 
-// SOCIAL
-
-#viewlet-social-like {
-    float: left;
-}
-
-#viewlet-social-like.vertical > div {
-    float: left !important;
-    clear: both;
-    margin-bottom: 0.5em;
-    height: 1.5em;
-}
-
-#social-share-container {
-    width: 10em !important;
-    bottom: -7em;
-    position: absolute;
-    right: 3em;
-    background-color: #fff;
-    z-index: 10;
-    padding: 1em;
-    box-shadow: -10px 10px 20px rgba(0,0,0,0.2);
-    display: block;
-}
-
-#social-share-container.shown-right-panel {
-    opacity: 1;
-    display: block;
-}
-#social-share-container.hidden-right-panel {
-    opacity: 0;
-    right:-1000%;
-    position: relative;
-}
-// FIN SOCIAL
 
 // A NE PAS GARDER ?
 
