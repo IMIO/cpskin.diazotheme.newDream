@@ -24,7 +24,7 @@
         </div>
 
 
-      <div class="image-background" tal:attributes="style string:background-image:url(${data/url}/@@images/image/slider)"></div>
+      <img tal:attributes="src string:${data/url}/@@images/image/banner-event">
 
       <tal:condition tal:define='taxonomies python:view.get_taxonomies()'
                     tal:condition='taxonomies'>
