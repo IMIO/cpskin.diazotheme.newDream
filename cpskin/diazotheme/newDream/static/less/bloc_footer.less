@@ -1,72 +1,24 @@
-/* >>> FOOTER <<< */
-
-#portal-sitemap > li {
-    float:left;
-}
-
-#portal-sitemap .navTreeLevel3 .navTreeItem {
-    color: #205c90;
-    list-style: circle outside none;
-}
-
 #portal-footer-wrapper .row{
-    background-color:#f2f2f2;
+    background-color:@color-medium;
     padding-top:1em;
 }
 
-#portal-footer{
-    clear:both;
-    position:relative;
-    background-color:#f2f2f2;
+#portal-footer {
+    font-size: 1.1rem;
+    background-color:@color-medium;
 }
 
 #footer-sitemap {
-    clear:both;
-    position:relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-#footer-sitemap a {
-    color: gray;
-    text-transform: uppercase;
-}
-
-.footer-sitemap-item > a {
-    font-size: 18px;
-}
-
-.footer-sitemap-item > ul {
-    margin-top: 0.5em;
-}
-
-#footer-sitemap ul li a,
-#footer-sitemap .footer-static a{
-    text-transform:none;
-}
-
-.footer-sitemap-item{
-    display: @footer-sitemap-display;
-    float:left;
-    max-width:13%;
-    min-width:7%;
-    padding:0 1em 0 1.5em;
-}
-
-.footer-sitemap-item li {
-    display: block;
-    line-height: 1.1em;
-    margin-bottom: 0.75em;
-}
-
 #footer-sitemap div.footer-static {
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
     flex-wrap: wrap;
-    float:left;
     margin-left: 0;
-    padding-bottom: 0.25em;
-    padding-left: 0.5em;
     a[href*="edit"]{
         position: absolute;
         top: -2em;
@@ -80,9 +32,7 @@
 #visual-portal-wrapper > footer {
     clear: both;
 }
-//FOOTER
 .footer-bloc{
-    box-sizing: border-box;
     padding: 3em 3em 3em 0;
     flex: 1 1 25%;
     p{
@@ -105,4 +55,39 @@
         border-bottom: 1px solid @color-light;
     }
 }
-/* >>> FIN FOOTER <<< */
+
+
+//DEPRECATED
+// #portal-sitemap .navTreeLevel3 .navTreeItem {
+//     color: #205c90;
+//     list-style: circle outside none;
+// }
+// .footer-sitemap-item > a {
+//     font-size: 18px;
+// }
+
+// .footer-sitemap-item > ul {
+//     margin-top: 0.5em;
+// }
+// .footer-sitemap-item{
+//     display: block;
+//     float:left;
+//     max-width:13%;
+//     min-width:7%;
+//     padding:0 1em 0 1.5em;
+// }
+
+// .footer-sitemap-item li {
+//     display: block;
+//     line-height: 1.1em;
+//     margin-bottom: 0.75em;
+// }
+// #footer-sitemap a {
+//     color: @color-dark;
+//     text-transform: uppercase;
+// }
+
+// #footer-sitemap ul li a,
+// #footer-sitemap .footer-static a{
+//     text-transform:none;
+// }
