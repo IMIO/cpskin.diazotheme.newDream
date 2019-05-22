@@ -94,16 +94,12 @@
    id="++theme++cpskin.diazotheme.newDream/less/view_index.less"
    remove="True" />
 
- <stylesheet title="cpskin.diazotheme.newDream Agenda Styles"
-   id="++theme++cpskin.diazotheme.newDream/less/view_agenda.less"
-   remove="True" />
-
  <stylesheet title="cpskin.diazotheme.newDream Event Styles"
-   id="++theme++cpskin.diazotheme.newDream/less/view_event.less"
+   id="++theme++cpskin.diazotheme.newDream/less/view_type_event.less"
    remove="True" />
 
  <stylesheet title="cpskin.diazotheme.newDream Document Styles"
-   id="++theme++cpskin.diazotheme.newDream/less/view_document.less"
+   id="++theme++cpskin.diazotheme.newDream/less/view_type_document.less"
    remove="True" />
 
  <stylesheet title="cpskin.diazotheme.newDream Minisite Styles"
@@ -112,6 +108,14 @@
 
  <stylesheet title="cpskin.diazotheme.newDream Flexslider Styles"
    id="++theme++cpskin.diazotheme.newDream/less/flexslider.less"
+   remove="True" />
+ 
+  <stylesheet title="cpskin.diazotheme.newDream Citizen Styles"
+   id="++theme++cpskin.diazotheme.newDream/less/citizen.less"
+   remove="True" />
+  
+  <stylesheet title="cpskin.diazotheme.newDream Faceted Styles"
+   id="++theme++cpskin.diazotheme.newDream/less/view_faceted.less"
    remove="True" />
 
 </object>

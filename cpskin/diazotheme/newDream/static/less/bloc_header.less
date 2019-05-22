@@ -1,0 +1,768 @@
+
+/* --- messagesviewlets --- */
+#messagesviewlet .close-button {
+    visibility: hidden;
+    &:before {
+        content: "\e86d";
+        font-family: fontello;
+        visibility: visible;
+        border-radius: 50%;
+        background: #fff;
+        padding: 0.5em;
+        box-sizing: border-box;
+    }
+}
+
+//HEADER
+#top-actions{
+    background: @header-actions;
+}
+#top-actions-inner a{
+    color: @header-actions-color;
+    &:hover{
+        color: @header-actions-color;
+    }
+}
+
+/*Navigation*/
+
+#navWrapper #portal-globalnav .menutools-1 a,
+#navWrapper #portal-globalnav .menutools-2 a,
+#navWrapper #portal-globalnav .toolbox-menutools a{
+    background-color: #F7F4F6;
+    text-transform:uppercase;
+    color:black;
+}
+
+#top-navigation #navWrapper #portal-globalnav .menutools-1 a:hover,
+#top-navigation #navWrapper #portal-globalnav .menutools-2 a:hover,
+#navWrapper #portal-globalnav .toolbox-menutools a:hover,
+#portal-globalnav .menutools-1.selected > a,
+#portal-globalnav  .menutools-2.selected > a,
+#portal-globalnav .toolbox-menutools.selected > a{
+    color:#303030;
+    background-color:white;
+}
+
+.section-je-suis li#portaltab-index_html.selected a,
+.section-je-trouve li#portaltab-index_html.selected a{
+    background-color:transparent;
+}
+
+.section-je-suis li#portaltab-index_html.selected a:hover,
+.section-je-trouve li#portaltab-index_html.selected a:hover{
+    background-color:#ffffff;
+}
+
+#portal-header #navWrapper {
+    background-color: @nav-wapper-bg;
+    margin: 0;
+	height: auto !important;
+}
+
+/* --- logo et search --- */
+
+#portal-logo > img {
+    max-width: 450px;
+    height:auto;
+}
+
+#top-search-logo-inner a:focus img {
+    outline: 0px solid transparent !important;
+}
+
+#top-search-logo {
+    background-color: #ECEAEB;
+}
+
+#top-search-logo-inner {
+    margin: 0 auto;
+    max-width:1200px;
+    position:relative;
+}
+
+#hidden-search{
+    z-index:9;
+}
+#hidden-search #portal-searchbox {
+    position: relative;
+    right: auto;
+    float: none;
+    text-align: center;
+    background: lightblue;
+    padding: 2em 0;
+    margin: 0;
+}
+#hidden-search .LSBox {
+    background: transparent;
+}
+#portal-header #search-btn {
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.LSBox{
+	&::after {
+    color: #adadad;
+    content: @header-search-icon;
+    font-size: 130%;
+    font-family:fontello;
+    display: inline-block;
+    font-family: fontello;
+    font-size: 130%;
+    margin-left: -40px;
+    width: 37px;
+    }
+    #searchGadget {
+    color: gray;
+    font-size: 1.3em;
+    height: 39px;
+    margin-right: 0;
+    padding-left: 0.5em;
+    padding-right: 40px;
+    width: 13em;
+    border:none;
+	}
+}
+
+input[type="text"], input[type="password"], textarea {
+    background-color: rgba(255,255,255,0.8);
+    border-color: lightgray !important;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: lightgray !important;
+}
+
+.LSBox input.searchField {
+    border: 1px solid #e4e4e4;
+   -moz-appearance: none;
+}
+
+#portal-searchbox .LSBox .searchButton {
+    background-color: transparent;
+    border: 0 solid lightgrey;
+    color: transparent;
+    cursor: pointer;
+    float: right;
+    height: 4.5em;
+    margin-left: -4em;
+    margin-right: 0;
+    opacity: 1;
+    position: absolute;
+    width: 4em;
+}
+
+.faceted-widget.faceted-text-widget.section-recherche fieldset form::after, .faceted-widget.faceted-text-widget.section-search fieldset form::after {
+    background: transparent none repeat scroll 0 0;
+    bottom: 0;
+    color: black;
+    content: "";
+    display: block;
+    float: right;
+    font-family: "fontello";
+    height: 20px;
+    padding: 0 0 5px 4px;
+    position: absolute;
+    right: 10px;
+    top: 0.25em;
+    width: 20px;
+    z-index: 0;
+}
+
+
+.LSBox .searchSection {
+    display: none;
+}
+
+#livesearchLegend {
+    background-color: transparent;
+    float: left;
+    margin-top: -2em;
+}
+
+.LSBox #LSResult {
+    background: none repeat scroll 0 0 transparent;
+}
+
+.LSRow a:hover {
+    text-decoration: underline;
+}
+
+.LSRow a {
+    display: block;
+}
+
+#LSResult fieldset {
+    background-color: white;
+    border: 0.1em solid #f2f2f2;
+    margin: 2em 0 0 -7em;
+    padding: 2em 0.5em 0.5em;
+}
+
+/* --- fin logo et search --- */
+
+/* --- top actions --- */
+#top-actions{
+    background-color:grey;
+}
+
+#top-actions-inner{
+    margin: 0 auto;
+    max-width:1200px;
+}
+
+#top-actions-inner a, #top-actions-inner li a:hover{
+    color:white;
+}
+
+#portal-siteactions {
+    padding-bottom: 0;
+}
+
+#portal-personaltools {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 85%;
+    padding: 0;
+}
+
+#portal-personaltools dt{
+	margin-right:1em;
+}
+
+#portal-personaltools dd a:hover {
+    background: none repeat scroll 0 0 #404040;
+    border-radius: 5px;
+}
+
+#portal-personaltools dd {
+    background-color: grey;
+    margin-top: 3px;
+    margin-right:2em;
+}
+[id="top-menu-actions"]{
+    float: left;
+}
+.top-menu-action {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 85%;
+}
+.top-menu-action .actionMenuContent{
+    background: #808080;
+    padding: 0.5em 0.25em;
+}
+.top-menu-action dl.actionMenu.activated dd a{
+    margin: 0 0.25em 0.4em 0.25em ;
+    padding: 0.25em;
+}
+#top-actions-inner .top-menu-action dl.actionMenu.activated dd a:hover{
+    background: #f2f2f2;
+    color: #333333;
+}
+.top-menu-action dl.actionMenu.activated dt {
+    margin: 0 0.25em;
+}
+
+#top-actions-actions{
+    float:right;
+}
+
+dl.actionMenu.activated dt a{
+	margin:0;
+}
+
+#portal-personaltools dt {
+    margin: 0 1em;
+}
+
+#siteaction-en,#siteaction-nl,#siteaction-de {
+    font-size: 80%;
+}
+
+#portal-header #portal-siteactions #siteaction-en a,#portal-header #portal-siteactions #siteaction-nl a,
+#portal-header #portal-siteactions #siteaction-de a  {
+    color: transparent;
+    display: inline-block;
+    width: 20px;
+}
+
+#siteaction-en{
+    background:url("../images/site-en.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#siteaction-nl{
+    background:url("../images/site-nl.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#siteaction-de{
+    background:url("../images/site-de.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+/* --- fin top actions --- */
+
+// NAVIGATION
+
+/* cpskin menu */
+#top-navigation{
+    background: #f1f1f1;
+}
+#portal-globalnav #portaltab-index_html a::after{
+    content:"";
+}
+
+#portal-globalnav #portaltab-index_html a {
+	background: @nav-onglet-bg;
+	padding-left: 1.25%;
+	padding-right: 1.25%;
+	width: 1%;
+	overflow: hidden;
+	position: relative;
+	color: transparent;
+}
+
+#portal-globalnav #portaltab-index_html a::before {
+    content: "\e811";
+	color:sub1;
+    font-family: fontello;
+    font-size: 130%;
+    padding-left:2px;
+    padding-right:2px;
+    text-decoration:none;
+	position: absolute;
+	right: 21%;
+}
+
+/* --- ajout menu dynamique --- */
+
+.portal-globalnav-cpskinmenu a:hover, .portal-globalnav-cpskinmenu-tabs a:hover{
+	border-radius: @sub1-onglet-border;
+	background-color: @sub1-onglet-bg-hover;
+	color: @sub1-onglet-color-hover;
+}
+
+ul.navTreeLevel0 li a {
+    padding: 0.4em 0.75em !important;
+    margin:0.5em;
+    color:sub1-hover;
+}
+
+ul.navTreeLevel1 li a, ul.navTreeLevel2 li a {
+    padding: 0.25em 0.75em !important;
+    margin:0.25em;
+    color:@nav-onglet-color-hover;
+}
+
+
+/* --- fin ajout menu dynamique --- */
+
+#portal-globalnav-cpskinmenu.navTreeLevel0 a,
+#portal-globalnav-cpskinmenu.navTreeLevel0 a:link,
+#portal-globalnav-cpskinmenu.navTreeLevel0 a:visited{
+    color:white;
+    padding: 0.4em 0.75em !important;
+}
+
+div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTreeLevel0 ul.navTreeLevel1 li a,
+div#top-navigation div#top-navigation-inner ul#portal-globalnav-cpskinmenu.navTreeLevel0 ul.navTreeLevel2 li a {
+    color:black !important;
+    margin: 0.25em  0.5em !important;
+    padding: 0.25em 0.75em !important;
+}
+
+#portal-globalnav-cpskinmenu a:hover, 
+#portal-globalnav-cpskinmenu-tabs a:hover,
+li.sfHover > span > a {
+    background-color: #fff;
+    border-radius: 5px;
+    color:@nav-onglet-color-hover;
+}
+.navTreeItemInPath {
+    border-bottom-width: 0 !important;
+}
+
+#portal-globalnav a:hover,
+#portal-globalnav .selected a,
+#top-navigation #portal-globalnav .activated{
+    background-color:@nav-onglet-bg-hover;
+}
+
+#portal-globalnav .selected a,
+#portal-globalnav .selected a:hover,
+#portal-globalnav a:hover,
+#portal-globalnav li a.activated{		
+		color:#fff;
+}
+#portal-globalnav li a {
+    background-color: @nav-onglet-bg;
+	color: @nav-onglet-color;
+    border: 0 solid #e8e8e8;
+    font-size: 130%;
+    margin-right: 0.5em;
+    min-width: 0;
+    padding: 0.8% 2%;
+    float:left;
+}
+
+#navWrapper #portal-globalnav #portaltab-je-suis a, #navWrapper #portal-globalnav #portaltab-je-trouve a {
+	background-color: @nav-onglet-jsjt-bg;
+}
+
+#navWrapper #portal-globalnav #portaltab-je-suis a:hover,
+#navWrapper #portal-globalnav #portaltab-je-trouve a:hover,
+#navWrapper #portal-globalnav #portaltab-je-suis a.activated,
+#navWrapper #portal-globalnav #portaltab-je-trouve a.activated{
+	background-color: @nav-onglet-bg-hover;
+}
+
+
+.section-theme1 .width-1\:2 .myimageleft, .section-theme2 .width-1\:2 .myimageleft,
+.section-theme3 .width-1\:2 .myimageleft{
+    max-height: 69px;
+    max-width: 150px;
+}
+
+.section-theme1 .width-1\:2 #accueil #media h3, .section-theme2 .width-1\:2 #accueil #media h3,
+.section-theme3 .width-1\:2 #accueil #media h3{
+    font-size: 1em;
+}
+
+.section-theme1 .width-1\:2 .documentByLine, .section-theme2 .width-1\:2 .documentByLine,
+.section-theme3 .width-1\:2 .documentByLine{
+    font-size: 0.9em;
+}
+
+.menutools-viewlet {
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    z-index: 1;
+    padding:0;
+    bottom: -37px;
+}
+
+.menutools-viewlet li a {
+    padding: 1.1em;
+}
+
+.menutools-viewlet li a:hover {
+    background-color: #FF0000;
+}
+
+#toolsbar {
+    float: right;
+    position: relative;
+}
+
+/* --- Correctif temporaire affichage si tools sans float --- */
+
+#dropnav.active {
+    display: none;
+}
+
+/* --- Fin correctif temporaire affichage si tools sans float --- */
+
+#portal-globalnav-cpskinmenu .direct_access li a{
+    padding:0.25em 0.25em 0.25em 0.5em !important;
+}
+
+.sf-menu .direct_access li a::before{
+    content: "\e807";
+    font-family: "fontello";
+    padding-right:0.25em;
+}
+
+.icon-vimeo::before {
+    font-size: 14px;
+}
+
+#portal-globalnav-cpskinmenu{
+    padding-bottom:0.5em;
+}
+
+.sf-menu ul.navTreeLevel1 {
+    border-top: 0px solid #999999 !important;
+    position: absolute;
+    width: 100%;
+}
+
+.sf-menu ul.navTreeLevel1 .lastItem{
+    padding-bottom:1.5em;
+}
+
+.sf-menu ul.navTreeLevel2{
+    background-color: #ffffff!important;
+    border-top: 0px solid #999999 !important;
+    position: absolute;
+    width: 100%;
+}
+
+#portal-globalnav-cpskinmenu-tabs li a, #portal-globalnav-cpskinmenu li a {
+    display: block;
+    margin: 0.5em 0.5em 0 0.5em;
+}
+
+.sf-menu ul.direct_access {
+    background-color: #ededed !important;
+}
+
+#portal-footer-wrapper{
+    position:relative;
+    clear:both;
+}
+
+ul.navTreeLevel0 {
+	background: @nav-onglet-bg-hover;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.navTreeLevel1 {
+	background: @nav-onglet-bg-hover;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.navTreeLevel2 {
+	background: @nav-onglet-bg-hover;
+    margin-top: 0em;
+    padding-top: 0.5em;
+}
+
+#portal-globalnav-cpskinmenu-tabs li, #portal-globalnav-cpskinmenu li{
+    vertical-align:top;
+}
+.navTreeClose {
+    font-size: 22px;
+    color: grey;
+    display:none;
+}
+
+#portal-globalnav a::after, .sf-with-ul::after{
+    content: @nav-onglet-icon;
+    font-family:fontello;
+    font-size: 100%;
+    margin-left: 0.4em;
+}
+
+.sf-menu ul.navTreeLevel1.has_direct_access {
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
+}
+
+.no_direct_access{
+    padding-top:0.5em;
+}
+
+.no_direct_access .lastItem{
+    padding-bottom:0em;
+}
+
+.direct_access .firstItem {
+    padding-top: 0.5em;
+}
+
+/* --- fin cpskin menu --- */
+
+// MENU MOBILE
+/*   menu mobile */
+@media screen and (max-width: 600px) {
+    #top-navigation-inner {
+    display: inherit;
+    }
+}
+.advb-submenu .submenu{
+    float: left;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submenu-level-1 li, .advb-submenu ul li {
+    clear: both;
+    float: left;
+}
+.advb-submenu ul li {
+    border-left: 0 dashed white;
+    border-top: 1px dashed #f2f2f2;
+    box-sizing: border-box;
+    font-size: 17px;
+    padding: 0.5em 0 0.25em 1.5em;
+    width: 100%;
+}
+.advb-submenu{
+    float:left;
+    clear:both;
+}
+
+.advb-submenu ul{
+    padding-left: 10px;
+}
+
+#advanced-breadcrumbs .nofollow::after {
+    content: " ‹";
+    float: left;
+    margin-left: -1.25em;
+    padding-left: 0.25em;
+    transform: rotate(270deg);
+}
+
+#mobnav-btn {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0.6em 0;
+    margin: 0;
+    background-color: #404040;
+}
+
+.advb-submenu .advb-title {
+    padding: 3px 7px 3px 4px;
+    background-color: #34495E;
+    float:left;
+}
+
+div#mobile-first-level-wrapper {
+    background-color: #f2f2f2;
+    border-radius: 0 0 5px 5px;
+    margin-top: -7px;
+    padding-top: 8px;
+}
+
+div#mobile-first-level-wrapper a {
+    display:block;
+    color: #000 !important;
+}
+
+#mobnav-btn, .advb-title {
+    border-bottom: 0px solid #FFFFFF !important;
+}
+
+#mobnav-btn::before,
+.advb-title::before {
+    content: "\f008" !important;
+    font-family: "fontello" !important;
+    font-size: 15px;
+    margin-left: 1em;
+    padding-right: 0.5em;
+}
+.advb-submenu .advb-title::before{
+    font-size: 15px;
+    margin-left: 1em;
+}
+
+.iframe-responsive-wrapper .iframe-ratio {
+    margin-bottom: 6px;
+    min-height: 94px;
+}
+#advanced-breadcrumbs .advb-submenu {
+    border-top: 1px solid #0E213F;
+    margin: 0;
+    width: 100%;
+}
+#advanced-breadcrumbs #advb-submenu-level-2.advb-submenu {
+    border-top: 0 solid white;
+}
+.advb-submenu ul li:first-child {
+    border-top: 0 solid white;
+}
+.advb-submenu ul li:last-child {
+    padding-bottom: 0.6em;
+}
+#title-level-2,
+#title-level-3,
+#title-level-4{
+    padding: 0.5em 0;
+}
+#advanced-breadcrumbs .follow {
+    margin-left: 0.3em;
+}
+#advanced-breadcrumbs .follow::after {
+    content: "\e83f";
+    float: left;
+    font-family: fontello;
+    font-size: 60%;
+    margin-left: -2.1em;
+    margin-top: 0.3em;
+}
+#advb-submenu-level-2.advb-submenu,
+#advb-submenu-level-3.advb-submenu,
+#advb-submenu-level-4.advb-submenu{
+    padding-left: 0;
+}
+
+// FIN MENU MOBILE
+
+/* ---  Je suis, je trouve --- */
+
+#content .widget-fieldset ul {
+    margin-bottom: 0;
+    margin-left:0;
+}
+
+#content .widget-fieldset li {
+    border-radius: 5px;
+    float: left;
+    margin-right: 0.75em;
+    max-width: 270px;
+    min-height: 53px;
+    min-width: 270px;
+    padding-bottom: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+#top-area .widget-fieldset ul li input {
+    margin-left: 0.5em;
+    position: relative;
+    top: 6px;
+}
+
+.widget-fieldset ul li label {
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    padding: 0.3em 1em 0em 2.2em;
+    text-transform: uppercase;
+}
+
+/* ---  Fin je suis, je trouve --- */
+
+//NAVIGATION
+#top-navigation-inner {
+     display: flex;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+#portal-header #navWrapper {
+    flex: 1 1 0;
+    align-self: center;
+}
+#portal-globalnav .selected a,
+#portal-globalnav .selected a:hover,
+#portal-globalnav a:hover,
+#portal-globalnav li a.activated{		
+		color: @nav-onglet-color-hover;
+}
+//submenu
+.portal-globalnav-cpskinmenu.navTreeLevel0 {
+    background: @sub1-menu-bg;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sf-menu ul{
+    &.navTreeLevel1,
+    &.navTreeLevel2,
+    &.navTreeLevel3{
+        background: @sub1-menu-bg;
+    }
+}
+.sf-menu ul.direct_access{
+    background: @sub2-menu-bg !important;
+}

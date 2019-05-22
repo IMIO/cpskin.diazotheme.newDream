@@ -134,19 +134,22 @@
  <stylesheet title="cpskin.diazotheme.newDream Index Styles"
     id="++theme++cpskin.diazotheme.newDream/less/view_index.less" media="" />
 
- <stylesheet title="cpskin.diazotheme.newDream Agenda Styles"
-    id="++theme++cpskin.diazotheme.newDream/less/view_agenda.less" media="" />
-
  <stylesheet title="cpskin.diazotheme.newDream Event Styles"
-    id="++theme++cpskin.diazotheme.newDream/less/view_event.less" media="" />
+    id="++theme++cpskin.diazotheme.newDream/less/view_type_event.less" media="" />
 
  <stylesheet title="cpskin.diazotheme.newDream Document Styles"
-    id="++theme++cpskin.diazotheme.newDream/less/view_document.less" media="" />
+    id="++theme++cpskin.diazotheme.newDream/less/view_type_document.less" media="" />
 
  <stylesheet title="cpskin.diazotheme.newDream Minisite Styles"
     id="++theme++cpskin.diazotheme.newDream/less/minisite.less" media="" />
 
  <stylesheet title="cpskin.diazotheme.newDream Flexslider Styles"
     id="++theme++cpskin.diazotheme.newDream/less/flexslider.less" media="" />
+ 
+  <stylesheet title="cpskin.diazotheme.newDream Citizen Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/citizen.less" media="" />
+  
+  <stylesheet title="cpskin.diazotheme.newDream Faceted Styles"
+    id="++theme++cpskin.diazotheme.newDream/less/view_faceted.less" media="" />
 
 </object>
