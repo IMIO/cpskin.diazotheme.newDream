@@ -1,71 +1,59 @@
-/* A sortir*/
-
-.portaltype-event #fieldset-default > .field {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    float: left;
-    padding: 1em;
-    width: 100%;
-}
-
-/*fin a sortir*/
 // COLLECTIVE GEO
 
 .leaflet-container{
-    z-index:0;
-}
+	z-index:0;
 
-.leaflet-bar a:first-child {
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 0;
-    float: left;
-}
+	a:first-child {
+		border-bottom-left-radius: 4px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 0;
+		float: left;
+	}
 
-.leaflet-bar a:last-child {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-    float: left;
+	a:last-child {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 4px;
+		border-top-right-radius: 4px;
+		float: left;
+	}
 }
 
 .leaflet-control-layers-overlays-0 {
-    display: block;
-    max-height: 475px;
-    overflow: auto;
+	display: block;
+	max-height: 475px;
+	overflow: auto;
 }
 
 .leaflet-popup-content-wrapper {
     margin-bottom: -1px;
 }
 
-#viewlet-below-content-body > div.relatedItems {
-    padding-top: 1em;
-}
-
-#viewlet-below-content-body > div.relatedItems dl {
-    background: #f2f2f2 none repeat scroll 0 0;
-    border-left: 5px solid #bebebe;
-    clear: both;
-    margin-top: 2em;
-    padding: 2em;
-}
-
-#viewlet-below-content-body > div.relatedItems dt {
-    padding-bottom: 1em;
-    text-transform: uppercase;
-    float:left;
-}
-#viewlet-below-content-body > div.relatedItems dt:before{
-    content:"\e838";
-    font-family: fontello;
-    margin-right: 0.75em;
-}
-#viewlet-below-content-body #relatedItemBox > dd {
-    margin-bottom: 0.25em;
-    margin-left: 1em;
-    clear:both;
+#viewlet-below-content-body {
+	& > div.relatedItems {
+		padding-top: 1em;
+		dl {
+			background: #f2f2f2 none repeat scroll 0 0;
+			border-left: 5px solid #bebebe;
+			clear: both;
+			margin-top: 2em;
+			padding: 2em;
+		}
+		dt {
+		    padding-bottom: 1em;
+		    text-transform: uppercase;
+		    float:left;
+			&::before{
+			    content:"\e838";
+			    font-family: fontello;
+			    margin-right: 0.75em;
+			}
+		}
+	}
+	#relatedItemBox > dd {
+	    margin-bottom: 0.25em;
+	    margin-left: 1em;
+	    clear:both;
+	}
 }
 
 // FIN COLLECTIVE GEO
@@ -149,13 +137,12 @@ fieldset.citizen {
     margin: 1em auto 0;
     max-width: 1200px;
     text-align: center;
-}
-
-.citizen-info-viewlet a {
-    color: white;
-    display: block;
-    font-size: 150%;
-    padding: 1em;
+    a {
+	    color: white;
+	    display: block;
+	    font-size: 150%;
+	    padding: 1em;
+    }
 }
 
 /* fin compte citoyen  */
@@ -190,22 +177,24 @@ fieldset.citizen {
 .select2-container .select2-choice .select2-arrow {
     background: transparent none repeat scroll 0 0;
     border-left: 0 solid #aaa;
+	b {
+	    background-position: 0 4px;
+	}
 }
 
-.select2-container .select2-choice .select2-arrow b {
-    background-position: 0 4px;
-}
-
-#top-area .faceted-widget.faceted-criteria-widget{
-    box-sizing: border-box;
-    clear: left;
-    float: left;
-    margin-top: 1em;
-    padding-bottom: 0em;
-    padding-left: 1em;
-    padding-top: 0em;
+#top-area{
     position: relative;
-    width: 100%;
+    .faceted-widget.faceted-criteria-widget{
+	    box-sizing: border-box;
+	    clear: left;
+	    float: left;
+	    margin-top: 1em;
+	    padding-bottom: 0em;
+	    padding-left: 1em;
+	    padding-top: 0em;
+	    position: relative;
+	    width: 100%;
+    }
 }
 
 .widget-fieldset.faceted-criteria legend,
@@ -274,85 +263,80 @@ fieldset.citizen {
 #content #top-area .widget-fieldset.faceted-criteria {
     margin-bottom: 0;
     padding-bottom: 0;
+    a > legend, #content #top-area .widget-fieldset.faceted-criteria > dl {
+	    color: #7086a6;
+	    padding: 0 1em 0em 0;
+	    margin-bottom:0;
+    }
+}
+#faceted-form .faceted-widget.faceted-layout-widget.section-affichage{
+	fieldset {
+		margin: 0;
+		padding: 0;
+		li {
+			flex: 1 1 auto;
+			clear: none;
+			margin: 0;
+			max-width: 100%;
+			text-align: center;
+			width: 50%;
+			input {
+				display: none;
+				&:checked + label {
+					background: #808080;
+					color: #fff;
+					text-shadow: 0 0 0 transparent;
+				}
+			}
+			label {
+				padding: 0.4em 1em 0 2em;
+				color: #fff;
+				font-size: 17px;
+				text-transform: none;
+				background: #e0e0e0;
+				padding-top: 0.25em;
+				box-sizing: border-box;
+				display: inline-block;
+				padding-bottom: 0.6em;
+				padding-left: 1em;
+				padding-top: 0.5em;
+				margin: 0;
+				width: 100%;
+				color: #000;
+				&:hover {
+					background: #808080;
+					padding-bottom: 0.6em;
+					padding-left: 1em;
+					color: #fff;
+					text-shadow: 0 0 0 transparent;
+				}
+				&[title="Vue cartographique"]::before {
+				    content: "\e837";
+				    font-family: fontello;
+				    margin-right: 0.5em;
+				}
+				&[title="Vue agenda"]::before {
+				    font-family: fontello;
+				    content: "\e854";
+				    margin: 0 0.5em 0 0;
+				}
+
+				&[title="Vue annuaire"]::before {
+				    content: "\f00a";
+				    font-family: fontello;
+				    margin-right: 0.75em;
+				}
+
+			}
+		}
+	}
 }
 
-#content #top-area .widget-fieldset.faceted-criteria > legend, #content #top-area .widget-fieldset.faceted-criteria > dl {
-    color: #7086a6;
-    padding: 0 1em 0em 0;
-    margin-bottom:0;
-}
-#faceted-form .faceted-widget.faceted-layout-widget.section-affichage fieldset {
-    margin: 0;
-    padding: 0;
-}
-
-#content .faceted-widget.faceted-layout-widget.section-affichage li {
-    flex: 1 1 auto;
-    clear: none;
-    margin: 0;
-    max-width: 100%;
-    text-align: center;
-    width: 50%;
-}
-
-.section-affichage .widget-fieldset ul li label {
-    padding: 0.4em 1em 0 2em;
-    color: #fff;
-    font-size: 17px;
-    text-transform: none;
-}
-
-.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue cartographique"]::before {
-    content: "\e837";
-    font-family: fontello;
-    margin-right: 0.5em;
-}
-.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue agenda"]::before {
-    font-family: fontello;
-    content: "\e854";
-    margin: 0 0.5em 0 0;
-}
-
-.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue annuaire"]::before {
-    content: "\f00a";
-    font-family: fontello;
-    margin-right: 0.75em;
-}
 .faceted-widget:first-child {
     margin-left: 1.5em;
 }
-#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {
-    background: #808080;
-    color: #fff;
-    text-shadow: 0 0 0 transparent;
-}
-#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label:hover {
-    background: #808080;
-    padding-bottom: 0.6em;
-    padding-left: 1em;
-    color: #fff;
-    text-shadow: 0 0 0 transparent;
-}
-
-#content #top-area .faceted-widget.faceted-layout-widget.section-affichage input {
-    display: none;
-}
-
-#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label {
-    background: #e0e0e0;
-    padding-top: 0.25em;
-    box-sizing: border-box;
-    display: inline-block;
-    padding-bottom: 0.6em;
-    padding-left: 1em;
-    padding-top: 0.5em;
-    margin: 0;
-    width: 100%;
-    color: #000;
-}
-
-
-#faceted-form .select2-container .select2-choice, .widget-fieldset input[type="text"] {
+#faceted-form .select2-container .select2-choice,
+.widget-fieldset input[type="text"] {
     border-radius: 0;
     padding: 0.2em 0.5em;
 }
@@ -363,23 +347,28 @@ fieldset.citizen {
 
 .faceted-form #center-and-left-area {
     clear: both;
-}			
-#faceted-results .multi-days .photoAlbumEntry a,
-#faceted-results .single-days .photoAlbumEntry a  {		
-    padding: 0;		
-}		
+}
+#faceted-results{
+	.multi-days .photoAlbumEntry a,
+	.single-days .photoAlbumEntry a  {
+		padding: 0;
+	}
+}
 
 div.faceted-select2-container {
     max-width: 220px;
     min-width: 220px;
 }
 
-div.faceted-select2 ul li.taxonomy-group > div {
-    display: none;
-}
-
-div.faceted-select2 ul li.meta div {
-    padding-left: 0em;
+div.faceted-select2 ul{
+	li.taxonomy-group{
+		& > div {
+			display: none;
+		}
+	}
+	li.meta div {
+		padding-left: 0em;
+	}
 }
 
 .faceted-widget.section-recherche fieldset {
@@ -410,7 +399,8 @@ div.faceted-select2 ul li.meta div {
     text-align: center;
 }
 
-.faceted_letter_selected, .faceted_letter:hover {
+.faceted_letter_selected,
+.faceted_letter:hover {
     background-color: #b62b32 !important;
     color:white;
 }
@@ -418,7 +408,7 @@ div.faceted-select2 ul li.meta div {
 .faceted-sections-buttons a::after {
     background: #fff none repeat scroll 0 0;
     color: #0e2240;
-    font-weight: bold;  
+    font-weight: bold;
     margin-left: 0.5em;
     padding: 0.25em 0.5em;
 }
@@ -434,10 +424,6 @@ div.faceted-select2 ul li.meta div {
 
 #_GMapContainer {
     width: 100% !important;
-}
-
-#top-area {
-    position: relative;
 }
 
 #faceted-form .faceted-sections-buttons {
@@ -463,13 +449,12 @@ div.faceted-select2 ul li.meta div {
     border-width:0px;
 }
 
-#faceted-top-column::after{
-    left: 100%;
-}
-
 #faceted-top-column {
     display: inline-block;
     width: 100%;
+    &::after{
+	    left: 100%;
+    }
 }
 
 .faceted-form {
@@ -497,15 +482,16 @@ div.faceted-select2 ul li.meta div {
     width: 1000px;
 }
 
-.template-facetednavigation_view #faceted-results {
-    margin-top: 1em;
-    margin-bottom:1em;
-}
-
-.template-facetednavigation_view .contact-title,
-.template-facetednavigation_view .organization-title {
-    font-size: 80%;
-    margin-left: 0;
+.template-facetednavigation_view{
+	#faceted-results {
+		margin-top: 1em;
+		margin-bottom:1em;
+	}
+	.contact-title,
+	.organization-title {
+	    font-size: 80%;
+	    margin-left: 0;
+	}
 }
 
 .template-facetednavigation_view #viewlet-above-content-title .iconifiedDocumentActions,
@@ -576,75 +562,81 @@ div.faceted-select2 ul li.meta div {
 .faceted-drag-drop.faceted-widgets.faceted-default-widgets.faceted-top-widgets  .faceted-criteria a{
     padding-right: 0.2em;
 }
-.template-facetednavigation_view .contact-photo,
-.template-facetednavigation_view .organization-logo{
-    display:none;
+.template-facetednavigation_view{
+	.contact-photo,
+	.organization-logo{
+		display:none;
+	}
+	.contact-selection {
+	    position: absolute;
+	    left: 1em;
+	    top: -0.85em;
+	}
+	.organization-entry,
+	.contact-entry {
+		box-sizing: border-box;
+		padding: 1em;
+		position:relative;
+		background: #f1f1f1;
+		border-radius: 0px;
+		overflow: hidden;
+		box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.3);
+		clear:none;
+		border-bottom:0px solid white;
+		.contact-info{
+		    margin-left: 0;
+		}
+	}
+	.eea-preview-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	&.userrole-authenticated .organization-entry,
+	&.userrole-authenticated .contact-entry {
+		padding-top: 2em;
+	}
 }
-.template-facetednavigation_view .contact-selection {
-    position: absolute;
-    left: 1em;
-    top: -0.85em;
-}
-.faceted-text-widget.section-search input {
-    padding: 0.55em;
-    background: #fff;
-    border: 1px solid #f9f9f9 !important;
-    height: 25px;
-}
-.faceted-text-widget.section-search form{
-    position: relative;
-}
-.template-facetednavigation_view .eea-preview-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.template-facetednavigation_view .organization-entry,
-body.template-facetednavigation_view .contact-entry {
-    box-sizing: border-box;
-    padding: 1em;
-    position:relative;
-    background: #f1f1f1;
-    border-radius: 0px;
-    overflow: hidden;
-    box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.3);
-    clear:none;
-    border-bottom:0px solid white;
-}
-body.template-facetednavigation_view.userrole-authenticated .organization-entry,
-body.template-facetednavigation_view.userrole-authenticated .contact-entry {
-    padding-top: 2em;
+.faceted-text-widget.section-search{
+	input {
+		padding: 0.55em;
+		background: #fff;
+		border: 1px solid #f9f9f9 !important;
+		height: 25px;
+	}
+	form{
+		position: relative;
+	}
 }
 .contacts-facetednav-actions {
     position: absolute;
     top: 0;
     right: 1em;
 }
-.template-facetednavigation_view .organization-entry .contact-info,
-.template-facetednavigation_view .contact-entry .contact-info {
-    margin-left: 0;
-}
-.contact-details p, .contact-details > div {
-    clear: both;
-    display: inline-block;
-    float: left;
+.contact-details {
+	p,
+	& > div {
+		clear: both;
+		display: inline-block;
+		float: left;
+	}
 }
 /* fin navigation par facettes  */
 /*  fiche annuaire   */
 
-#organization > .contact-details label,
-#person > .contact-details label{
-    color: #4d80d1;
-}
-#organization > .contact-details,
-#person > .contact-details {
-    padding: 1em;
-}
-#organization > .contact-details a,
-#person > .contact-details a {
-    clear: both;
-    display: block;
-    text-decoration: underline;
+#organization,
+#person {
+	& > .contact-details {
+	        padding: 1em 1em 1em 0;
+		a{
+		    clear: both;
+		    display: block;
+		    text-decoration: none;
+		}
+		label{
+			color: #4d80d1;
+		}
+	}
 }
 .contact-details p a{
     clear:both;
@@ -657,10 +649,10 @@ body.template-facetednavigation_view.userrole-authenticated .contact-entry {
     display: inline;
     border: 0em solid #fff;
     margin:0;
-}
-#content .Schedule legend {
-    font-size: 100%;
-    font-weight: bold;
+    legend {
+	    font-size: 100%;
+	    font-weight: bold;
+    }
 }
 div.schedule-widget-day {
     width: 100%;
@@ -699,9 +691,6 @@ div.schedule-widget-day {
         left: 0;
     }
 }
-.schedule > div {
-    float: right;
-}
 .activity {
     clear: both;
     padding-top: 1em;
@@ -709,20 +698,15 @@ div.schedule-widget-day {
 .schedule {
     padding:0;
     flex: 1 1 0%;
+    & > div {
+	    float: right;
+    }
 }
 #viewlet-above-content-body .wrapped-coord {
-    flex: 1 1 0%;
-}
-#viewlet-above-content-body .wrapped-coord div {
-    margin-bottom: 0.25em;
-}
-#organization > .contact-details, #person > .contact-details {
-    padding: 1em 1em 1em 0;
-}
-#organization > .contact-details a, #person > .contact-details a {
-    clear: both;
-    display: block;
-    text-decoration: none;
+	flex: 1 1 0%;
+	div{
+		margin-bottom: 0.25em;
+	}
 }
 #visual-portal-wrapper .contact-details {
     float: left;
@@ -730,15 +714,15 @@ div.schedule-widget-day {
 #visual-portal-wrapper .held_position.vcard .contact-details{
     width: 100%;
 }
-.portaltype-person #held_positions .held_position:first-of-type{
-    margin: 1em 1em 1em 0;
-}
 .portaltype-person #held_positions .held_position{
-    min-height: 36em;
-}
-.portaltype-person #held_positions .held_position .organization{
-    float: left;
-    margin: 1em 1em 1em 0;
+	min-height: 36em;
+	&:first-of-type{
+		margin: 1em 1em 1em 0;
+	}
+	.organization{
+		float: left;
+		margin: 1em 1em 1em 0;
+	}
 }
 /*  related contact  */
 
@@ -748,20 +732,18 @@ div.schedule-widget-day {
 }
 
 #belowContentContact .related-contact {
-    float: left;
-    margin-bottom: 1.5em;
-    width: 50%;
-}
-
-#belowContentContact .related-contact h4 {
-    width: 90%;
-    font-size:1.1em;
-    font-weight:bold;
-    margin: 0 0 0.5em 0;
-}
-
-#belowContentContact .related-contact h4:hover {
-    color: #b62b32;
+	float: left;
+	margin-bottom: 1.5em;
+	width: 50%;
+	h4{
+		width: 90%;
+		font-size:1.1em;
+		font-weight:bold;
+		margin: 0 0 0.5em 0;
+		&:hover {
+			color: #b62b32;
+		}
+	}
 }
 
 #aboveContentContact #ul-aboveContentContact,
@@ -775,65 +757,63 @@ div.schedule-widget-day {
     margin-bottom:0 !important;
 }
 
-.subsection-vie-politique-conseil-communal-annuaire-des-conseillers h4{
-    background: #f1f1f1;
-    padding:0.75em;
-}
-
-.subsection-vie-politique-conseil-communal-annuaire-des-conseillers .photo{
-    padding: 1em 0 0;
-}
-
-.subsection-vie-politique-conseil-communal-annuaire-des-conseillers .photo > img {
-    width: 150px;
+.subsection-vie-politique-conseil-communal-annuaire-des-conseillers{
+	h4{
+		background: #f1f1f1;
+		padding:0.75em;
+	}
+	.photo{
+		padding: 1em 0 0;
+		& > img {
+		    width: 150px;
+		}
+	}
 }
 .related-contact .fax{
     background: none;
     padding: 0;
-}
-.related-contact .fax::before{
-    display: none;
+    &::before{
+	    display: none;
+    }
 }
 /*  event  */
-#content a.caltrigger::after {
-    content: "\e851";
-    font-family: fontello;
-}
 #content a.caltrigger {
     background: none;
     height: 22px;
     margin: 0.25em 0 0 0.5em;
     width: 22px;
+    &::after {
+	    content: "\e851";
+	    font-family: fontello;
+    }
 }
-
 #calroot {
     padding: 6px;
 }
-
-#calnext, #calprev {
+#calnext,
+#calprev {
     height: 26px;
 }
-
 #caldays {
     font-size: 12px;
     height: 18px;
 }
-
-.calweek a, #caltitle select {
+.calweek a,
+#caltitle select {
     font-size: 12px;
 }
-
-.day .photoAlbumEntryTitle {
-    color: #092a4d;
-    font-size: 14px !important;
-    height: 48px !important;
-    padding: 0.75em;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.day .photoAlbumEntryWrapper:after {
-    background: #f2f2f2 none repeat scroll 0 0;
+.day{
+	.photoAlbumEntryTitle {
+		color: #092a4d;
+		font-size: 14px !important;
+		height: 48px !important;
+		padding: 0.75em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.photoAlbumEntryWrapper:after {
+	    background: #f2f2f2 none repeat scroll 0 0;
+	}
 }
 
 #faceted-results .day .photoAlbumEntry {
@@ -854,12 +834,10 @@ div.schedule-widget-day {
 #faceted-results .day {
     color: #018ab7;
     font-size: 150%;
+    .photoAlbumEntry {
+	    font-size: 14px;
+    }
 }
-
-#faceted-results .day .photoAlbumEntry {
-    font-size: 14px;
-}
-
 .day-date {
     background: #e9e9e9 none repeat scroll 0 0;
     box-sizing: border-box;
@@ -901,7 +879,8 @@ fieldset#form-groups-related_contacts,
     display: none !important;
 }
 
-.faceted-simpledate-widget-form > div > label, .faceted-daterange-widget-form > div > label {
+.faceted-simpledate-widget-form > div > label,
+.faceted-daterange-widget-form > div > label {
     display: none;
 }
 
@@ -970,32 +949,31 @@ body.template-facetednavigation_view #content .contact-entry-photos{
     display: block;
 }
 
-.dynamic-hover .organization-photos {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 65%;
-}
-
-.dynamic-hover .organization-photos.hover{
-    background-color: black; 
-    opacity: 0.75;
-}
-
-.dynamic-hover .organization-photos.hover.hover-delay{
-    opacity: 1;
-    transition: all 0.25s ease-in-out;
+.dynamic-hover{
+	.organization-photos {
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 65%;
+		&.hover{
+		    background-color: black;
+		    opacity: 0.75;
+			&.hover-delay{
+			    opacity: 1;
+			    transition: all 0.25s ease-in-out;
+			}
+		}
+	}
 }
 
 .organization-informations {
     padding: 1em;
     margin: 0;
-}
-
-.organization-informations .indexview-categories {
-    top: 0;
-    margin-left: 0;
-    padding-left: 0;
-    font-style: italic;
+    .indexview-categories {
+	    top: 0;
+	    margin-left: 0;
+	    padding-left: 0;
+	    font-style: italic;
+    }
 }
 
 .template-facetednavigation_view .contact-title, .template-facetednavigation_view .organization-title {
@@ -1028,7 +1006,10 @@ body.template-facetednavigation_view #content .contact-entry-photos{
     position:relative;
 }
 
-#activity, .contact-ttwfields, .addnewcontactfromorganization, div#organization-photos {
+#activity,
+.contact-ttwfields,
+.addnewcontactfromorganization,
+div#organization-photos {
     float: left;
     clear: none;
     display: block;
@@ -1036,11 +1017,13 @@ body.template-facetednavigation_view #content .contact-entry-photos{
     box-sizing: border-box;
 }
 
-.contact-details label, .Schedule legend {
+.contact-details label,
+.Schedule legend {
     display: none !important;
 }
 
-.contact-details p, .contact-details > div {
+.contact-details p,
+.contact-details > div {
     width: 100%;
 }
 #form-widgets-schedule {
@@ -1065,16 +1048,18 @@ body.template-facetednavigation_view #content .contact-entry-photos{
     padding: 0.25em 0 0em 0em;
 }
 //logo
-.coordinates .logo {
-    flex-basis: 15%;
-    padding: 0 0.5em 0 0;
-    box-sizing: border-box;
-}
-.coordinates > div:nth-of-type(2n){
-    padding: 0 1em;
-}
-.coordinates > div:last-of-type{
-    padding: 0;
+.coordinates{
+	.logo {
+		flex-basis: 15%;
+		padding: 0 0.5em 0 0;
+		box-sizing: border-box;
+	}
+	& > div:nth-of-type(2n){
+	    padding: 0 1em;
+	}
+	& > div:last-of-type{
+	    padding: 0;
+	}
 }
 .logo + .wrapped-coord  + .schedule {
     flex: 1 1 44%;
@@ -1082,33 +1067,3 @@ body.template-facetednavigation_view #content .contact-entry-photos{
 #viewlet-above-content-body .logo + .wrapped-coord {
     flex: 1 1 30%;
 }
-//RESPONSIVE
-/*@media screen and (max-width: 480px){
-    body.template-facetednavigation_view .contact-entry,
-    body.template-facetednavigation_view #content .organization-entry-photos,
-    body.template-facetednavigation_view #content .contact-entry-photos{
-        height: 20em;
-        width: 100% !important;
-    }
-}
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
-    body.template-facetednavigation_view .contact-entry,
-    body.template-facetednavigation_view #content .organization-entry-photos,
-    body.template-facetednavigation_view #content .contact-entry-photos{
-        width: calc((100% - 2%) / 2);
-        &:nth-child(2) {
-            margin-right: 0;
-        }
-    }
-}
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
-    body.template-facetednavigation_view .contact-entry,
-    body.template-facetednavigation_view #content .organization-entry-photos,
-    body.template-facetednavigation_view #content .contact-entry-photos{
-        width: calc((100% - 6%) / 4);
-        &:nth-child(4) {
-            margin-right: 0;
-        }
-    }
-}
-*/
