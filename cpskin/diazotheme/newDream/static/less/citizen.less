@@ -1,48 +1,4 @@
-//COMPTE CITOYEN
-
-/* citizen  */
-
-.citizen {
-    background: #3d8acd none repeat scroll 0 0;
-    float: right;
-    margin-bottom: 1em;
-    padding: 0;
-    position: absolute;
-    right: 0;
-}
-
-.citizen h3 {
-    display:none;
-}
-
-.citizen-propose label.horizontal {
-    margin: 2em 0;
-    display: block;
-    text-transform: uppercase;
-}
-
-#viewlet-below-content-title .citizen a, .citizen>div {
-    background: transparent;
-    padding: 0.5em 1.1em;
-    color: white !important;
-    float: left;
-}
-
-#portal-columns #viewlet-below-content-title .citizen a:hover {
-    color: white !important;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#content .citizen ul {
-    margin-bottom: 0;
-    margin-top: 0.5em;
-}
-
-.subsection-citizen-map .faceted-criteria-reset {
-    display: none;
-}
-//RECAPTCHA
+//RECAPTCHA SIGNUP FORM
 [id="captcha"]{
     margin: 2% 0;
 }
@@ -60,10 +16,28 @@
     }
 }
 
-.user-citizen form p {
-    margin-top: 2em;
+//Button "Demande de gestion"
+.citizen {
+    background: #3d8acd none repeat scroll 0 0;
+    float: right;
+    margin-bottom: 1em;
+    padding: 0;
+    position: absolute;
+    right: 0;
 }
 
+.citizen h3 {
+    display:none;
+}
+
+.citizen a {
+    background: lightgrey;
+    padding: 0.5em 1em;
+    color: black !important;
+}
+//end button
+
+// Form "Demande de gestion"
 .formControls input, .citizen input {
     background: #3d8acd;
     padding: 1em 1.5em;
@@ -79,35 +53,9 @@
     background: #0E2240;
     color: white;
 }
+//end form
 
-.citizen a {
-    background: lightgrey;
-    padding: 0.5em 1em;
-    color: black !important;
-}
-
-#content .citizen legend {
-    padding: 0.5em 0.25em 0.25em;
-    top: 1em;
-    position: relative;
-    color: white;
-    font-size: 125% !important;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-}
-
-fieldset.citizen {
-    border: 0px solid lightgray !important;
-    background: gray;
-    padding-top: 2em;
-    margin: 0 -2em;
-}
-
-.template-claim-citizen #content > form {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
+// Citizen dashboard
 .section-citizen-dashboard.template-facetednavigation_view #faceted-results,
 .template-facetednavigation_view #faceted-results{
     padding-left: 0;
@@ -170,6 +118,7 @@ fieldset.citizen {
     position: relative;
 }
 
+//Hide edit tools to citizen
 .user-citizen #personaltools-dashboard,
 .user-citizen #personaltools-undo, 
 .user-citizen #personaltools-preferences,
@@ -177,4 +126,54 @@ fieldset.citizen {
 .user-citizen #content div.documentByLine {
     display: none;
 }
-// FIN COMPTE CITOYEN
+//end hide
+.citizen-propose label.horizontal {
+    margin: 2em 0;
+    display: block;
+    text-transform: uppercase;
+}
+
+#viewlet-below-content-title .citizen a, .citizen>div {
+    background: transparent;
+    padding: 0.5em 1.1em;
+    color: white !important;
+    float: left;
+}
+
+#portal-columns #viewlet-below-content-title .citizen a:hover {
+    color: white !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#content .citizen ul {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+.user-citizen form p {
+    margin-top: 2em;
+}
+
+#content .citizen legend {
+    padding: 0.5em 0.25em 0.25em;
+    top: 1em;
+    position: relative;
+    color: white;
+    font-size: 125% !important;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+fieldset.citizen {
+    border: 0px solid lightgray !important;
+    background: gray;
+    padding-top: 2em;
+    margin: 0 -2em;
+}
+
+.template-claim-citizen #content > form {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
