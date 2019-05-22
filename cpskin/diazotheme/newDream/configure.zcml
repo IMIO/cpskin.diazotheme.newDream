@@ -7,6 +7,7 @@
     <!-- Dependencies -->
     <include package="cpskin.theme" />
 
+    <include package=".browser" />
     <include package=".viewlets" />
 
     <include file="profiles.zcml" />
