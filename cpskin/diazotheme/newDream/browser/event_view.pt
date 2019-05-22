@@ -24,7 +24,7 @@
         </div>
 
 
-      <div class="image-background" tal:attributes="style string:background-image:url(${data/url}/@@images/image/preview)"></div>
+      <div class="image-background" tal:attributes="style string:background-image:url(${data/url}/@@images/image/slider)"></div>
 
       <tal:condition tal:define='taxonomies python:view.get_taxonomies()'
                     tal:condition='taxonomies'>
@@ -118,7 +118,7 @@
       </div>
 
       <div class="details">
-        <div class="header toggle-button" id="details-button" i18n:translate="">Details</div>
+        <div class="header"><span i18n:translate="">Details</span><span class="toggle-button" id="details-button" i18n:translate="">More details</span></div>
         <div id="details-block" class="desactive">
           <div class="event_contacts" tal:define="contact view/get_contact" tal:condition="contact">
             <div class="label" i18n:translate="">Contact</div>
