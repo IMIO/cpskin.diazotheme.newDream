@@ -23,17 +23,16 @@
           </div>
 
           <div id="top-actions" class="minisitessss">
-            <div id="top-actions-inner" class="minisites">
-            </div>
           </div>
       </replace>
       <before css:content-children="#cpskin-banner">
+          <xsl:if test="$is_search_in_banner">
             <div id="top-search">
               <div id="top-search-inner">
                 <xsl:copy-of select="//*[@id='portal-searchbox']"/>
               </div>
             </div>
-           
+          </xsl:if>
         </before>
       <drop css:content="#viewlet-above-content #viewlet-minisite" />
       <drop css:content="#portal-breadcrumbs" />
@@ -79,7 +78,6 @@
                       <div id="top-logo-inner">
                           <xsl:apply-templates select="./*[@id='portal-logo']" />
                       </div>
-                       
                   </div>
                   <xsl:apply-templates select="./*[@id='portal-globalnav']" />
                 <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
@@ -104,9 +102,9 @@
                     <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
                                          mode="raw"/>
                 </a>
-            </li>             
+            </li>
          </xsl:if>
-      </after>  
+      </after>
         <before if="$is_search_in_banner" css:content-children="#cpskin-banner">
             <div id="top-search">
               <div id="top-search-inner">
@@ -122,35 +120,45 @@
                     <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
                                          mode="raw"/>
                 </a>
-            </li>             
+            </li>
          </xsl:if>
-        </after> 
+        </after>
 
       <drop css:content="#minisite-search" />
 
   </rules>
-  
+
   <drop css:content="#portal-siteactions" />
   <drop css:content="#messagesviewlet" />
   <drop css:content="#minisite-globalnav" />
   <drop css:content="#portal-breadcrumbs" />
   <drop css:content="#top-menu-actions" />
-    
+
     <!-- Logo to minisite horizontal navigation and minisite action-->
     <rules if="$ms_horizontal_navigation_any_mode">
         <before css:content-children="#container-minisite-globalnav">
-            <xsl:copy-of select="//*[@id='minisite-actions']" />
+            <div id="minisite-actions">
+                <ul>
+                    <xsl:apply-templates css:select="#minisite-actions li" />
+                    <xsl:if test="$is_search_in_actions">
+                      <xsl:copy-of select="//*[@id='portal-searchbox']"/>
+                    </xsl:if>
+                </ul>
+            </div>
             <div id="minisite-navigation-inner">
                 <div id="minisite-logo-nav">
                     <xsl:copy-of select="//*[@id='minisite-logo']" />
                     <xsl:copy-of select="//*[@id='minisite-globalnav']" />
                     <xsl:copy-of select="//*[@class='minisite-dropdown-menu']" />
-                </div> 
-            </div>   
+                    <xsl:if test="$is_search_in_navigation">
+                      <xsl:copy-of select="//*[@id='portal-searchbox']"/>
+                    </xsl:if>
+                </div>
+            </div>
         </before>
         <drop css:content="#minisite-logo" />
         <drop css:content="#minisite-actions" />
         <drop css:content=".minisite-dropdown-menu" />
     </rules>
-  
+
 </rules>
