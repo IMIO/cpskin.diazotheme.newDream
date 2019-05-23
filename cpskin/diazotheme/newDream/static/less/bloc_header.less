@@ -17,7 +17,7 @@
 #top-actions{
     background: @header-actions;
 }
-#top-actions-inner a{
+#top-actions-inne.dater a{
     color: @header-actions-color;
     &:hover{
         color: @header-actions-color;
@@ -63,8 +63,14 @@
 /* --- logo et search --- */
 
 #portal-logo > img {
-    max-width: 450px;
+    max-width: 80px;
     height:auto;
+}
+
+#portal-searchbox {
+    float: none;
+    display: inline-block;
+    font-size: 100%;
 }
 
 #top-search-logo-inner a:focus img {
@@ -83,46 +89,57 @@
 
 #hidden-search{
     z-index:9;
-}
-#hidden-search #portal-searchbox {
-    position: relative;
-    right: auto;
-    float: none;
-    text-align: center;
-    background: lightblue;
     padding: 2em 0;
-    margin: 0;
+    background: lightblue;
+    text-align: center;
+    width:100%;
 }
-#hidden-search .LSBox {
-    background: transparent;
-}
-#portal-header #search-btn {
-    margin-right: 6px;
-    margin-top: 10px;
+#top-search-inner{
+    text-align:center;
 }
 
 .LSBox{
-	&::after {
-    color: #adadad;
-    content: @header-search-icon;
-    font-size: 130%;
-    font-family:fontello;
+    background: transparent;
     display: inline-block;
-    font-family: fontello;
-    font-size: 130%;
-    margin-left: -40px;
-    width: 37px;
-    }
+    position: relative;
     #searchGadget {
-    color: gray;
-    font-size: 1.3em;
-    height: 39px;
-    margin-right: 0;
-    padding-left: 0.5em;
-    padding-right: 40px;
-    width: 13em;
-    border:none;
+        color: gray;
+        font-size: 1.3em;
+        height: 39px;
+        margin-right: 0;
+        padding-left: 1.5rem;
+        padding-right: 40px;
+        width: 27rem;
+        border:none;
+        &:focus{
+            background:#fff;
+        }
 	}
+    label::after {
+        color: #adadad;
+        text-align:left;
+        content: @header-search-icon;
+        font-size: 130%;
+        font-weight: normal;
+        font-family:fontello;
+        display: inline-block;
+        font-family: fontello;
+        font-size: 130%;
+        width: 2.5rem;
+        position: absolute;
+        right: 0;
+        top:1.25rem;
+    }
+    .searchButton {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        border-width: 0px;
+        height: 4rem;
+        background: transparent;
+        width: 4rem;
+        color: transparent;
+    }
 }
 
 input[type="text"], input[type="password"], textarea {
@@ -137,20 +154,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .LSBox input.searchField {
     border: 1px solid #e4e4e4;
    -moz-appearance: none;
-}
-
-#portal-searchbox .LSBox .searchButton {
-    background-color: transparent;
-    border: 0 solid lightgrey;
-    color: transparent;
-    cursor: pointer;
-    float: right;
-    height: 4.5em;
-    margin-left: -4em;
-    margin-right: 0;
-    opacity: 1;
-    position: absolute;
-    width: 4em;
 }
 
 .faceted-widget.faceted-text-widget.section-recherche fieldset form::after, .faceted-widget.faceted-text-widget.section-search fieldset form::after {
@@ -199,7 +202,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin: 2em 0 0 -7em;
     padding: 2em 0.5em 0.5em;
 }
-
+#cpskin-banner #top-search {
+    position: absolute;
+    width: 100%;
+    bottom: 5em;
+}
 /* --- fin logo et search --- */
 
 /* --- top actions --- */
@@ -222,7 +229,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 #portal-personaltools {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    font-size: 85%;
+    font-size: 100%;
     padding: 0;
 }
 
@@ -246,7 +253,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .top-menu-action {
     display: inline-block;
     vertical-align: top;
-    font-size: 85%;
 }
 .top-menu-action .actionMenuContent{
     background: #808080;
@@ -260,12 +266,38 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     background: #f2f2f2;
     color: #333333;
 }
-.top-menu-action dl.actionMenu.activated dt {
+/*.top-menu-action dl.actionMenu.activated dt {
     margin: 0 0.25em;
-}
+}*/
 
-#top-actions-actions{
-    float:right;
+#top-actions-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    a {
+        margin-right: 0.75em;
+    }
+    #portal-personaltools dd{
+        margin-right:0;
+        #portal-personaltools dt.actionMenuHeader a::after {
+            content: "\e844";
+            font-family: fontello;
+            margin-left: 0.25rem;
+        }
+    }
+    dl.actionMenu {
+        float: right;
+        margin-left: 0em;
+    }
+    dl.actionMenu.deactivated dt {
+        margin: 0;
+    }
+    #portal-siteactions{
+        font-size: 100%;
+    }
+    #portal-personaltools dt {
+        margin: 0;
+    }
 }
 
 dl.actionMenu.activated dt a{
