@@ -90,7 +90,9 @@
               </div>
             </div>
             <div id="hidden-search" style="display:none;">
-              <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+              <div class="search-container">
+                <xsl:copy-of select="./*[@id='portal-searchbox']/*"/>
+              </div>
             </div>
           </div>
       </replace>
