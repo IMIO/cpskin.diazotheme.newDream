@@ -1,7 +1,33 @@
-// QUICK ACCESS
-.quick-access ul{
-    display: flex;
-    justify-content: space-between;
+//QUICK ACCESS
+.quick-access {
+    padding: 1rem 0;
+    #form-widgets-text {
+        display: initial !important;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        list-style: none !important;
+        margin-left: 0 !important;
+    }
+    .icons {
+        flex-basis: 6rem;
+        padding: 1.5rem;
+        text-align: center;
+        a {
+            font-size: 2rem;
+        }
+    }
+}
+[class^="icon-"] {
+    &::before {
+        display: block;
+        margin: 0 auto;
+        font-size: 3rem;
+        padding-bottom: .5rem;
+    }
 }
 
 // ACCES DIRECTS
@@ -54,8 +80,6 @@
 // FIN VUE EVENTS
 
 /* ZONE ACTU EVENT */
-
-
 
 .portlet.portletMedia{
     padding: 1em;
@@ -420,13 +444,6 @@ iframe .player .title{
   clear: both;
   display: block;
   content: "";
-}
-
-#portal-column-content #portal-breadcrumbs {
-    font-size: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0.5em 0 0 1em;
 }
 
 #content ul {

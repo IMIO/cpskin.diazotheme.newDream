@@ -8,54 +8,49 @@
     background-color:@color-medium;
 }
 
-#footer-sitemap {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#footer-sitemap a {
-    color: gray;
-    text-transform: uppercase;
-}
-
-.footer-sitemap-item > a {
-    font-size: 18px;
-}
-
-.footer-sitemap-item > ul {
-    margin-top: 0.5em;
-}
-
-#footer-sitemap ul li a,
-#footer-sitemap .footer-static a{
-    text-transform:none;
-}
-
-.footer-sitemap-item{
-    display: block;
-    float:left;
-    max-width:13%;
-    min-width:7%;
-    padding:0 1em 0 1.5em;
-}
-
-.footer-sitemap-item li {
-    display: block;
-    line-height: 1.1em;
-    margin-bottom: 0.75em;
-}
-
-#footer-sitemap div.footer-static {
+//FLEX FOOTER
+.footer-static {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 0;
-    a[href*="edit"]{
-        position: absolute;
-        top: -2em;
-    }
 }
+
+// #footer-sitemap {
+//     max-width: 1200px;
+//     margin: 0 auto;
+// }
+
+// #footer-sitemap a {
+//     color: gray;
+//     text-transform: uppercase;
+// }
+
+// .footer-sitemap-item > a {
+//     font-size: 18px;
+// }
+
+// .footer-sitemap-item > ul {
+//     margin-top: 0.5em;
+// }
+
+// #footer-sitemap ul li a,
+// #footer-sitemap .footer-static a{
+//     text-transform:none;
+// }
+
+// .footer-sitemap-item{
+//     display: block;
+//     float:left;
+//     max-width:13%;
+//     min-width:7%;
+//     padding:0 1em 0 1.5em;
+// }
+
+// .footer-sitemap-item li {
+//     display: block;
+//     line-height: 1.1em;
+//     margin-bottom: 0.75em;
+// }
 
 #portal-footer p{
     text-align:center;
@@ -64,15 +59,29 @@
 #visual-portal-wrapper > footer {
     clear: both;
 }
-.footer-bloc{
-    padding: 3em 3em 3em 0;
-    flex: 1 1 25%;
+
+#footer-sitemap div.footer-static {
+    //cancel float in sunburst
+    float: none;
+    a[href*="edit"]{
+        position: absolute;
+        top: -2em;
+    }
+}
+
+.footer-static {
+    padding: 1rem;
+}
+
+.footer-static .flex-item {
+    padding: 1rem;
     p{
+        font-size: 1.4em;
         color : @color-light;
     }
-    h3{
+    h2{
+        font-size: 1.8em;
         color : @color-light;
-        font-size: 1em;
         font-weight: bold;
         padding: 0 0 0.5em 0;
     }
@@ -87,39 +96,3 @@
         border-bottom: 1px solid @color-light;
     }
 }
-
-
-//DEPRECATED
-// #portal-sitemap .navTreeLevel3 .navTreeItem {
-//     color: #205c90;
-//     list-style: circle outside none;
-// }
-// .footer-sitemap-item > a {
-//     font-size: 18px;
-// }
-
-// .footer-sitemap-item > ul {
-//     margin-top: 0.5em;
-// }
-// .footer-sitemap-item{
-//     display: block;
-//     float:left;
-//     max-width:13%;
-//     min-width:7%;
-//     padding:0 1em 0 1.5em;
-// }
-
-// .footer-sitemap-item li {
-//     display: block;
-//     line-height: 1.1em;
-//     margin-bottom: 0.75em;
-// }
-// #footer-sitemap a {
-//     color: @color-dark;
-//     text-transform: uppercase;
-// }
-
-// #footer-sitemap ul li a,
-// #footer-sitemap .footer-static a{
-//     text-transform:none;
-// }
