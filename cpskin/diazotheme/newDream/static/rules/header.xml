@@ -175,7 +175,19 @@
                             </xsl:if>
                       </ul>
                     </div>
-                    <xsl:copy-of select="//*[@class='minisite-dropdown-menu']" />
+                    <div class="minisite-dropdown-menu">
+                      <xsl:copy-of select="//*[@class='minisite-dropdown-menu']/a" />
+                      <ul class="navTree navTreeLevel0">
+                      <xsl:copy-of select="//*[@class='minisite-dropdown-menu']/ul/li" />
+                      <li id="search-action">
+                        <a href="#" class="btn-search">
+                          <span class="ico-search"></span>
+                          <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
+                            mode="raw"/>
+                        </a>
+                      </li>
+                      </ul>
+                    </div>
                 </div>
             </div>
             <xsl:if test="$is_search_in_navigation">
