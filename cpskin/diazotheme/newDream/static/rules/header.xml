@@ -141,13 +141,13 @@
                 <ul>
                     <xsl:apply-templates css:select="#minisite-actions li" />
                     <xsl:if test="$is_search_in_actions">
-                      <div id="search-action">
+                      <li id="search-action">
                         <a href="#" class="btn-search">
                             <span class="ico-search"></span>
                             <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
                                                  mode="raw"/>
                         </a>
-                      </div>
+                      </li>
                     </xsl:if>
                 </ul>
             </div>
@@ -161,17 +161,21 @@
             <div id="minisite-navigation-inner">
                 <div id="minisite-logo-nav">
                     <xsl:copy-of select="//*[@id='minisite-logo']" />
-                    <xsl:copy-of select="//*[@id='minisite-globalnav']" />
+                    <div id="minisite-globalnav">
+                      <ul>
+                          <xsl:apply-templates css:select="#minisite-globalnav li" />
+                          <xsl:if test="$is_search_in_navigation">
+                            <li id="search-action">
+                              <a href="#" class="btn-search">
+                                <span class="ico-search"></span>
+                                <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
+                                  mode="raw"/>
+                                </a>
+                              </li>
+                            </xsl:if>
+                      </ul>
+                    </div>
                     <xsl:copy-of select="//*[@class='minisite-dropdown-menu']" />
-                    <xsl:if test="$is_search_in_navigation">
-                      <div id="search-action">
-                        <a href="#" class="btn-search">
-                            <span class="ico-search"></span>
-                            <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
-                                                 mode="raw"/>
-                        </a>
-                      </div>
-                    </xsl:if>
                 </div>
             </div>
             <xsl:if test="$is_search_in_navigation">
