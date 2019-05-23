@@ -6,15 +6,16 @@
 
 // ACCES DIRECTS
 
-.acces-directs ul li a {
+.acces-directs ul li{
+    a {
     float: left;
     margin-bottom: 2em;
     margin-right: 2em;
     text-align: center;
-}
-
-.acces-directs ul li img {
+    }
+    img {
     display: block;
+    }
 }
 
 .acces-directs ul > li {
@@ -30,7 +31,8 @@
     margin: 0;
 }
 
-#content .event-date-dates > ul, #content .event-date-dates > ul li {
+#content .event-date-dates > ul,
+#content .event-date-dates > ul li {
     margin: 0;
     padding: 0;
 }
@@ -57,29 +59,24 @@
 
 .portlet.portletMedia{
     padding: 1em;
-}
-
-.portletMedia h3 {
+    h3 {
     color: #fbce01;
     font-size: 80%;
     font-weight: bold;
     padding-bottom: 0.25em;
     text-transform: uppercase;
-}
-
-#media {
-    background-image: none;
+    }
 }
 
 #media{
     background-image:url("../images/media-bg.gif");
     background-size: 100% auto;
     background-repeat:repeat-y;
+    div{
+    margin-top:0.5em;
+    }
 }
 
-#media div{
-    margin-top:0.5em;
-}
 
 // MULTIMEDIA VIEWLET
 
@@ -92,11 +89,10 @@
 .albums-container {
     float: left;
     width: 74%;
-}
-
-.albums-container .link-all {
+    .link-all {
     position: relative;
     right: 5%;
+    }
 }
 
 .videos-container {
@@ -113,21 +109,20 @@
     visibility:hidden;
 }
 
-#multimediaviewlet .left{
-    float:left;
-}
-
-#multimediaviewlet .center {
-    float: left;
-}
-
-#multimediaviewlet .center ul {
-    float:right;
-    max-width:310px;
-}
-
-#multimediaviewlet .center ul li {
-    float: left;
+#multimediaviewlet{
+    .left{
+        float:left;
+    }
+    .center {
+        float: left;
+        ul {
+            float:right;
+            max-width:310px;
+            li {
+                float: left;
+            }
+        }
+    }   
 }
 
 .center .albums .lead-image-wrapper {
@@ -152,29 +147,12 @@
     float: right;
     color:lightgrey;
     clear:both;
-}
-
-#multimediaviewlet .link-all::after {
+    ::after {
     content: "\00279F";
     font-size: 1.5em;
     position: relative;
     top: 3px;
-}
-
-div.width-1\:2 .album-3, div.width-1\:2 .album-4 {
-    display: none;
-}
-
-div.width-1\:2 .albums-container{
-    width:68%;
-}
-
-div.width-1\:2 #multimediaviewlet .center{
-    width:32%;
-}
-
-div.width-1\:2 .videos-container{
-    padding-left:2%;
+    }
 }
 
 .videos > li {
@@ -206,38 +184,18 @@ div.width-1\:2 .videos-container{
     float: left;
     width: 100%;
     margin-top: 1.5em;
-}
-
-.titre-rss a {
-    float: left;
-}
-
-
-.bloc-rss img {
-    display: none;
-}
-
-.bloc-rss {
-    padding-top: 0.75em;
-}
-
-.bloc-rss::after {
-    content: "\e81f";
-    font-family: fontello;
-    font-size: 126%;
-    margin-top: 2.5em;
-    margin-left:1em
+    a {
+        float: left;
+    }
+    .bloc-rss {
+        display: none;
+    }
 }
 
 #accueil #media h3{
     line-height:1.2em ;
 }
 
-#content .bloc-item{
-	box-sizing: border-box;
-    list-style: outside none none;
-    list-style: outside qli none;
-}
 
 /*.width-full .bloc-item{
      width: calc((100% - 9%) / @homepage-item-colums-0);
@@ -257,44 +215,44 @@ div.width-1\:2 .videos-container{
 .width-1\:2 #content .bloc-item:nth-child(2n){
     margin-right: 0;
 }*/
-.pageleadImage {
-    background-size: cover;
-	width: 49%;
-	padding-bottom: 19%;
-	float: left;
-	margin-right: 2%;
-	box-sizing: border-box;
+.template-facetednavigation_view .organization-entry,
+body.template-facetednavigation_view .contact-entry,
+   #content .bloc-item {
+   padding-right:1%;
 }
-.pagecaption {
+.faceted-list-oembed {
+   padding-right:1%;
+}
+#content .results{
     float: left;
-	width: 49%;
-	padding-bottom: 0;
-	overflow: hidden;
+    width:100%;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 0;
+        margin-left: 0;
+        &::after {
+            content: "";
+            flex: auto;
+        }
+        li .pageleadImage {
+            padding-bottom: 60%;
+            background-size: cover;
+        }
+    }
 }
-#content .results ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 0;
-    margin-left: 0;
+.bloc-collection .pagecaption {
+    background: lightblue;
+    height: 9em;
+    padding: 1em;
+    max-height: 9em;
+    margin: -2em 1em 1em 1em;
 }
-
-
-.results {
-/*    background-color: #eaeaea;   */
-    float: left;
-}
-
 .bloc-collection{
     clear:both;
 }
 
-.bloc-item img {
-    margin-right: 0em;
-    margin-bottom:0.5em;
-    max-height: 100%;
-    max-width: 100%;
-}
 .sticky-results .bloc-item h3 {
     background-image: url("../images/bookmark.png");
     background-position: 10px top;

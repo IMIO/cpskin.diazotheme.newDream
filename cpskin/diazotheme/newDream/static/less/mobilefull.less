@@ -1,8 +1,12 @@
 .template-facetednavigation_view .organization-entry,
 body.template-facetednavigation_view .contact-entry,
-   #content .bloc-item {
-   width: 24%;
+    #content .bloc-item {
+    width: calc(100% / 4);
+    &:nth-child(4n+4){
+        padding-right: 0;
+    }
 }
+
 .faceted-list-oembed {
-    flex-basis: 24%;
+    flex-basis: calc(97% / 4);
 }
