@@ -141,20 +141,46 @@
                 <ul>
                     <xsl:apply-templates css:select="#minisite-actions li" />
                     <xsl:if test="$is_search_in_actions">
-                      <xsl:copy-of select="//*[@id='portal-searchbox']"/>
+                      <div id="search-action">
+                        <a href="#" class="btn-search">
+                            <span class="ico-search"></span>
+                            <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
+                                                 mode="raw"/>
+                        </a>
+                      </div>
                     </xsl:if>
                 </ul>
             </div>
+            <xsl:if test="$is_search_in_actions">
+              <div id="hidden-search" class="top-hidden-search" style="display:none;">
+                <div id="portal-searchbox-action">
+                  <xsl:copy-of select="//*[@id='portal-searchbox']/*"/>
+                </div>
+              </div>
+            </xsl:if>
             <div id="minisite-navigation-inner">
                 <div id="minisite-logo-nav">
                     <xsl:copy-of select="//*[@id='minisite-logo']" />
                     <xsl:copy-of select="//*[@id='minisite-globalnav']" />
                     <xsl:copy-of select="//*[@class='minisite-dropdown-menu']" />
                     <xsl:if test="$is_search_in_navigation">
-                      <xsl:copy-of select="//*[@id='portal-searchbox']"/>
+                      <div id="search-action">
+                        <a href="#" class="btn-search">
+                            <span class="ico-search"></span>
+                            <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
+                                                 mode="raw"/>
+                        </a>
+                      </div>
                     </xsl:if>
                 </div>
             </div>
+            <xsl:if test="$is_search_in_navigation">
+              <div id="hidden-search" class="top-hidden-search" style="display:none;">
+                <div id="portal-searchbox-action">
+                  <xsl:copy-of select="//*[@id='portal-searchbox']/*"/>
+                </div>
+              </div>
+            </xsl:if>
         </before>
         <drop css:content="#minisite-logo" />
         <drop css:content="#minisite-actions" />
