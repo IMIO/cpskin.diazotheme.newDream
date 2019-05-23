@@ -22,7 +22,12 @@
   <replace css:content="#portal-footer-wrapper">
       <footer id="portal-footer-wrapper">
           <div class="row">
-              <xsl:apply-templates select="./*"/>
+          <xsl:if test="not($isinminisitemode)">
+              <xsl:apply-templates select="./div/*"/>
+          </xsl:if>
+          <xsl:if test="$isinminisitemode">
+              <xsl:apply-templates select="./div/div[not(contains(@id,'footer-sitemap'))]"/>
+          </xsl:if>
           </div>
       </footer>
   </replace>
