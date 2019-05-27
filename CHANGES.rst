@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.1.2 (unreleased)
+0.1.2 (2019-05-27)
 ------------------
 
 - Hide social links : WEB-3027
