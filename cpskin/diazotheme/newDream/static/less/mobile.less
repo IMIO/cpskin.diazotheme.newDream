@@ -1,5 +1,7 @@
 /* For devices with narrow screens, phones, tablets, etc. */
 
+
+
 #portal-column-one,
 #portal-column-two,
 #portal-column-content {
@@ -12,7 +14,7 @@
 	display: none;
 }
 #portal-personaltools {
-	margin-bottom: 1em;
+	margin-bottom: 0;
 }
 
 #mobile-first-level-wrapper .mobile-first-level a{
@@ -33,7 +35,9 @@
 #portal-searchbox {
 	float: none !important;
 	margin: 1em 0;
-	text-align: center;
+    text-align: center;
+    width: 300%;
+    transform: translateX(-28%);
 }
 
 #portal-searchbox input {
@@ -79,7 +83,9 @@
 	line-height: 2em !important;
 	font-size: 150%;
 }
-
+.portletWrapper{
+    display: none;
+}
 
 input, textarea {
 	font-size: 140% !important;
@@ -256,6 +262,11 @@ body.template-facetednavigation_view #content .contact-entry-photos{
 #before-activity{
     width: 100%;
 }
+
+.section-citizen-dashboard.template-facetednavigation_view #faceted-results,
+.template-facetednavigation_view #faceted-results{
+    padding: 0 .2rem!important;
+}
 #activity, .contact-ttwfields,
 .addnewcontactfromorganization,
 div#organization-photos{
@@ -340,4 +351,43 @@ div#organization-photos{
 //GLOBAL FLEX
 .flex-item {
     flex: 1 1 40%;
+}
+
+
+
+//AGENDA & ACTU MOBILE
+
+#content .agenda, #content .bloc-collection:not(.element-en-evidence){
+    ul{
+        li{
+            flex: @bloc-item-width-1;
+            margin-right: 0%;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+#content .faceted-agenda-ungrouped-view{
+    .event-entry{
+        flex: @bloc-item-width-1;
+        margin-right: 0%;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+    }
+}
+
+// Annuaire
+
+.template-facetednavigation_view{
+	.organization-entry,
+	.contact-entry {
+        flex: @bloc-item-width-1; 
+        margin-right: @bloc-item-margin-1;
+        &:nth-child(1n){
+            margin-right: 0;
+        }
+    }
 }

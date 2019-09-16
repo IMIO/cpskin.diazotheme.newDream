@@ -83,3 +83,40 @@ li.bloc-item a h3::after{
 .flex-item {
     flex: 1 1 25%;
 }
+//AGENDA & ACTU MOBILE
+
+#content .agenda, #content .bloc-collection:not(.element-en-evidence){
+    ul{
+        li{
+            flex: @bloc-item-width-3;
+            margin-right: 2%;            
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+#content .faceted-agenda-ungrouped-view{
+    .event-entry{
+        flex: @bloc-item-width-3;
+        margin-right: 2%;        
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+    }
+}
+
+
+// Annuaire
+
+body.template-facetednavigation_view{
+	.organization-entry,
+	.contact-entry {
+        flex: @bloc-item-width-3; 
+        margin-right: @bloc-item-margin-3;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+    }
+}

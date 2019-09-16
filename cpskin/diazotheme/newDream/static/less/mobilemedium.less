@@ -1,6 +1,25 @@
 /*Tablette*/
+//Navigation
 
 /*Page index*/
+
+.slider-carousel .flexslider.slider .flex-caption-inner {
+
+    background-color: #000000;
+    height: 90px;
+    opacity: 0.7;
+    padding: 0.25em 1% 0.75em;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.slider-carousel .flexslider.slider .publication-date {
+    margin-top: -140px;
+}
+
+#carousel-a-la-une{
+    display: none;
+}
 /* problème d'affichage sous safari 7  tout se met sur une colone  */
  #content .bloc-item{
     width: 49%;
@@ -39,7 +58,9 @@ body.template-facetednavigation_view #content .contact-entry-photos{
     float: left;
     max-width: 69%;
 }
-
+.portletWrapper{
+    display: none;
+}
 #multimediaviewlet .link-all {
     float: left;
 }
@@ -73,4 +94,46 @@ body.template-facetednavigation_view #content .contact-entry-photos{
 //view faceted preview items
 .eea-preview-items {
     column-count:  3;
+}
+
+//AGENDA & ACTU MOBILE
+
+#content .agenda, #content .bloc-collection:not(.element-en-evidence){
+    ul{
+        li{
+            flex: @bloc-item-width-2;
+            margin-right: 2%;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+#content .faceted-agenda-ungrouped-view{
+    .event-entry{
+        flex: @bloc-item-width-2;
+        margin-right: 2%;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+    }
+}
+
+// Annuaire
+
+.template-facetednavigation_view{
+	.organization-entry,
+	.contact-entry {
+        flex: @bloc-item-width-2; 
+        margin-right: @bloc-item-margin-2;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+    }
+}
+
+.section-citizen-dashboard.template-facetednavigation_view #faceted-results,
+.template-facetednavigation_view #faceted-results{
+    padding: 0 .5rem!important;
 }

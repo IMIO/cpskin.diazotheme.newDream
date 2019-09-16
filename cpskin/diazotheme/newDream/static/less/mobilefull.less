@@ -2,9 +2,6 @@
 body.template-facetednavigation_view .contact-entry,
     #content .bloc-item {
     width: calc(100% / 4);
-    &:nth-child(4n+4){
-        padding-right: 0;
-    }
 }
 
 .faceted-list-oembed {
@@ -20,3 +17,8 @@ body.template-facetednavigation_view .contact-entry,
 .flex-item {
     flex: 1 1 25%;
 }
+
+.template-facetednavigation_view .organization-entry:nth-child(4n), .template-facetednavigation_view .contact-entry:nth-child(4n) {
+    margin-right: 0;
+}
+

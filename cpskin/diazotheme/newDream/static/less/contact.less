@@ -165,7 +165,7 @@ fieldset.citizen {
 }
 
 .faceted-widget.faceted-text-widget.section-recherche input[type="text"] {
-    height: 1.8em;
+    height: 35px;
     margin-bottom: 0.6em;
 }
 
@@ -224,7 +224,7 @@ fieldset.citizen {
     padding: 0 0 5px 4px;
     position: absolute;
     right: 0.25em;
-    top: 0.35em;
+    top: 0.50em;
     width: 20px;
     z-index: 0;
 }
@@ -244,7 +244,7 @@ fieldset.citizen {
 }
 
 .faceted-widget.faceted-layout-widget.section-affichage {
-    width: 100%;
+    width: 100%!important;
     min-height: 0;
     margin: 2em 0 0 0;
     box-sizing: border-box;
@@ -302,7 +302,9 @@ fieldset.citizen {
 				padding-top: 0.5em;
 				margin: 0;
 				width: 100%;
-				color: #000;
+                color: #000;
+                height: 100%;
+                line-height: 4rem;
 				&:hover {
 					background: #808080;
 					padding-bottom: 0.6em;
@@ -526,7 +528,6 @@ div.faceted-select2 ul{
     position: relative;
     padding-right: 40px;
     width: calc(169px);
-    border: 1px solid #aaaaaa !important;
     background: #fff;
 }
 
@@ -545,6 +546,7 @@ div.faceted-select2 ul{
     z-index: 0;
     top: 0.25em;
     float: right;
+    border: none;
 }
 
 #content #faceted-results .listingBar .next {
@@ -562,6 +564,7 @@ div.faceted-select2 ul{
 .faceted-drag-drop.faceted-widgets.faceted-default-widgets.faceted-top-widgets  .faceted-criteria a{
     padding-right: 0.2em;
 }
+
 .template-facetednavigation_view{
 	.contact-photo,
 	.organization-logo{
@@ -574,23 +577,36 @@ div.faceted-select2 ul{
 	}
 	.organization-entry,
 	.contact-entry {
-		box-sizing: border-box;
 		padding: 1em;
-		position:relative;
-		background: #f1f1f1;
 		border-radius: 0px;
 		overflow: hidden;
-		box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.3);
-		clear:none;
-		border-bottom:0px solid white;
+        border:1px solid #e1e1e1;
+        flex: @bloc-item-width-4; 
+        margin-right: @bloc-item-margin-4;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 1em;
+        line-height: 1.4;
 		.contact-info{
 		    margin-left: 0;
-		}
+        }
+        .organization-title{
+            color: rgb(49, 49, 49)!important;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .organization-phone a , .organization-cellphone a, .organization-email a{
+            color: rgb(49, 49, 49)!important;
+            overflow-wrap: break-word;
+        }
 	}
-	.eea-preview-items {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+	& .eea-preview-items {
+        display: flex;
+        justify-content: flex-start!important;
+        margin-bottom: 0;
+        margin-left: 0;
+        flex-flow: wrap;
 	}
 	&.userrole-authenticated .organization-entry,
 	&.userrole-authenticated .contact-entry {
