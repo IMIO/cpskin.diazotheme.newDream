@@ -856,7 +856,7 @@ body.navigation-2 {
 #top-actions-actions{
     padding: 0!important;
 }
-#top-navigation-inner{
+.header-2, #top-navigation #top-navigation-inner{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -864,6 +864,10 @@ body.navigation-2 {
     & #top-logo{
         order: 3;
         padding:0!important;
+        position: inherit;
+        transform: inherit;
+        background: transparent;
+        text-align: center;
         & #portal-logo{
             margin: 0;
             &:after{

@@ -13,14 +13,31 @@
         margin-left: 0 !important;
         .quick-access_element{
             padding: @quick-access-padding;
-            display: flex;
+            display: flex!important;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-transform: uppercase;
             &:before{
                 content: "";
-                background: @quick-icon-1;
+                width: 50px;
+                height: 50px;
+                background-size: contain;
+                background-repeat: no-repeat;
                 display: block;
+                margin-bottom: 1rem;
+            }
+            &:nth-child(1):before{
+                background: @quick-icon-1;
+            }
+            &:nth-child(2):before{
+                background: @quick-icon-1;
+            }
+            &:nth-child(3):before{
+                background: @quick-icon-1;
+            }
+            &:nth-child(4):before{
+                background: @quick-icon-1;
             }
         }
     }
