@@ -1,6 +1,39 @@
 Changelog
 =========
 
+0.1.2 (2019-10-01)
+------------------
+
+- Remove useless css
+  [tlambert]
+
+- Adding multiple variables
+  [tlambert]
+  
+
+- General correction of the responsive
+  [tlambert]
+
+- Adding different themes according to the chosen class
+  [tlambert]
+
+- Use of different less file for responsive
+  [tlambert]
+
+- Adding font
+  [tlambert]
+
+- Use of the flex instead of float
+  [tlambert]
+
+- Responsive grid creation
+  [tlambert]
+
+- Add parallax with the ScrollMagic plugin
+  [tlambert]
+
+- Creation of several menu
+  [tlambert]
 
 0.1.3 (unreleased)
 ------------------
