@@ -4,7 +4,9 @@
 html {
     font-size: 62.5%;
 }
-
+#visual-portal-wrapper{
+    font-size: 1.6rem;
+}
 *,
 *::before,
 *::after {
@@ -398,7 +400,37 @@ div.formControls {
     }
     
 }
-
+#scroll-to-top{
+    text-align: right;
+    right: 0;
+    visibility: hidden;
+    a{
+        width: 70px;
+        height: 70px;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        &:before{
+            content: "\E8A9";
+            font-family: fontello;
+            visibility: visible;
+            border: solid 2px;
+            padding: 1rem; 
+            font-size: 25px;   
+            border-radius: 4px;   
+            font-weight: bold;      
+            visibility: visible;         
+            position: absolute;          
+            left: 0;          
+            right: 0;          
+            top: 0;           
+            bottom: 0;       
+            text-align: center;
+            vertical-align: middle;        
+            line-height: 52px;
+        }
+    }
+}
 
 // A NE PAS GARDER ?
 

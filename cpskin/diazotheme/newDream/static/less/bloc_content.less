@@ -3,14 +3,13 @@
 //QUICK ACCESS
 .quick-access {
     padding: 1rem 0;
-    #form-widgets-text {
-    }
     .quick-access-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-left: 0 !important;
+        padding: 2rem 0;
         .quick-access_element{
             padding: @quick-access-padding;
             display: flex!important;
@@ -18,26 +17,17 @@
             justify-content: center;
             align-items: center;
             text-transform: uppercase;
-            &:before{
-                content: "";
-                width: 50px;
-                height: 50px;
-                background-size: contain;
-                background-repeat: no-repeat;
-                display: block;
-                margin-bottom: 1rem;
-            }
-            &:nth-child(1):before{
-                background: @quick-icon-1;
-            }
-            &:nth-child(2):before{
-                background: @quick-icon-1;
-            }
-            &:nth-child(3):before{
-                background: @quick-icon-1;
-            }
-            &:nth-child(4):before{
-                background: @quick-icon-1;
+             a{
+                color: #262937!important;
+                font-size: 1.6rem;
+                line-height: 2.3em;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 0.139em;
+                &:before{
+                    color: #262937;
+                    font-size: @quick-access-width;
+                } 
             }
         }
     }
@@ -515,9 +505,6 @@ iframe .player .title{
     display: none;
 }
 
-#content a:link, dl.portlet a:link {
-    border-bottom: 0 solid #ccc;
-}
 
 
 /* --- Affiche actions vue content dossier bas de page --- */

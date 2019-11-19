@@ -14,43 +14,35 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.bloc-liens, .bloc-adresse{
+    width: 50%;
+    font-size: 15px;
+    h3{
+        color: #fff;
+    }
+    ul{
+        li{
+            margin: 1rem 0;
+            display: block;
+            a{
+                color: #fff;
+                font-size: 15px;
+                &:after{
+                    content: "\E8A7";
+                    font-family: fontello;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+.bloc-adresse{
+    p{
+        font-weight: bold;
+        margin: .5rem 0;
+    }
+}
 
-// #footer-sitemap {
-//     max-width: 1200px;
-//     margin: 0 auto;
-// }
-
-// #footer-sitemap a {
-//     color: gray;
-//     text-transform: uppercase;
-// }
-
-// .footer-sitemap-item > a {
-//     font-size: 18px;
-// }
-
-// .footer-sitemap-item > ul {
-//     margin-top: 0.5em;
-// }
-
-// #footer-sitemap ul li a,
-// #footer-sitemap .footer-static a{
-//     text-transform:none;
-// }
-
-// .footer-sitemap-item{
-//     display: block;
-//     float:left;
-//     max-width:13%;
-//     min-width:7%;
-//     padding:0 1em 0 1.5em;
-// }
-
-// .footer-sitemap-item li {
-//     display: block;
-//     line-height: 1.1em;
-//     margin-bottom: 0.75em;
-// }
 
 #portal-footer p{
     text-align:center;
@@ -61,11 +53,10 @@
 }
 
 #footer-sitemap div.footer-static {
-    //cancel float in sunburst
     float: none;
     a[href*="edit"]{
         position: absolute;
-        top: -2em;
+        top: 0em;
     }
 }
 
