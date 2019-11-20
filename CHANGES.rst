@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.4 (unreleased)
+0.1.4 (2019-11-20)
 ------------------
 
 - General correction of the responsive (view_index.less)
