@@ -4,7 +4,6 @@ Changelog
 0.1.4 (unreleased)
 ------------------
 
-<<<<<<< HEAD
 - General correction of the responsive (view_index.less)
   [tlambert]
 
@@ -16,12 +15,6 @@ Changelog
 
 
 0.1.3 (2019-10-01)
-=======
-- Nothing changed yet.
-
-
-0.1.2 (2019-10-01)
->>>>>>> e0ae8f6a7cce21d04bf02abbe848249593125d31
 ------------------
 
 - Remove useless css
