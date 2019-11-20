@@ -64,12 +64,12 @@ $(document).ready(function(){
 
 // Parallax slider
 new ScrollMagic.Scene({
-        triggerElement: "#slider-a-la-une .slides .flex-active-slide:before",
+        triggerElement: ".slider-unique-titre",
         triggerHook: "onEnter",
     })
     .duration('200%')
-    .setTween("#slider-a-la-une .slides .flex-active-slide:before", {
-        y: "-100%",
+    .setTween("#slider-grands-dossiers .flex-active-slide .flex-caption", {
+        y: "-60%",
         ease: Linear.easeNone
     })
     //.addIndicators() // for debugging purposes

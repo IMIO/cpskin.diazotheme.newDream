@@ -59,10 +59,16 @@
         margin-left: 0;
         flex-flow: wrap;
         li{
-            flex: @bloc-item-width-3; 
-            margin-right: @bloc-item-margin-3;
+            flex: @bloc-item-width;
+            margin-right: @bloc-item-margin;
+            &:nth-child(2n){
+                margin-right:@bloc-item-margin-2elements;
+            }
             &:nth-child(3n){
-                margin-right: 0;
+                margin-right:@bloc-item-margin-3elements;
+            }
+            &:nth-child(4n){
+                margin-right:@bloc-item-margin-4elements;
             }
         }
     }
@@ -282,26 +288,6 @@
 #accueil #media h3{
     line-height:1.2em ;
 }
-
-
-/*.width-full .bloc-item{
-     width: calc((100% - 9%) / @homepage-item-colums-0);
-}
-.width-3\:4 .bloc-item{
-     width: calc((100% - 6%) / @homepage-item-colums-2);
-}
-.width-1\:2 .bloc-item{
-     width: calc((100% - 3%) / @homepage-item-colums-3);
-}
-.width-full #content .bloc-item:nth-child(4n){
-    margin-right: 0;
-}
-.width-3\:4 #content .bloc-item:nth-child(3n){
-    margin-right: 0;
-}
-.width-1\:2 #content .bloc-item:nth-child(2n){
-    margin-right: 0;
-}*/
 
 
 .faceted-list-oembed {

@@ -26,33 +26,6 @@
     margin: 0 2em 4em 0;
     position: relative;
 }
-/*.width-full .event-entry{
-    width: calc((100% - 12%) / @agenda-event-entry-0);
-}
-.width-3\:4 .event-entry{
-    width: calc((100% - 8%) / @agenda-event-entry-2);
-}
-.width-1\:2 .event-entry{
-    width: calc((100% - 4%) / @agenda-event-entry-3);
-}
-.width-full .faceted-agenda-ungrouped-view .event-entry:nth-child(4n){
-    margin-right: 0;
-    & .pageleadImage{
-        margin-right: 0;
-    }
-}
-.width-3\:4 .faceted-agenda-ungrouped-view .event-entry:nth-child(3n){
-    margin-right: 0;
-    & .pageleadImage{
-        margin-right: 0;
-    }
-}
-.width-1\:2 .faceted-agenda-ungrouped-view .event-entry:nth-child(2n){
-    margin-right: 0;
-    & .pageleadImage{
-        margin-right: 0;
-    }
-}*/
 .day .pageleadImage {
     width: 100%;
     padding-bottom: 60%;
@@ -397,7 +370,28 @@
     background: @faceted-area-bg;
     padding: 2em 0 0 0;
     margin: 0 0 2em 0;
+    #top---default---widgets{
+        display: flex;
+        align-items: center;
+    }
 }
+.faceted-alphabetic-widget{
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    legend{
+        padding: 0!important;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width:800px){
+    #faceted-form #top-area #top---default---widgets {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
 
 //configuration faceted
 .template-configure_faceted-html #center-top-area {
@@ -458,4 +452,13 @@ input {
     color: #3c3c3c;
     padding: 0 1em;
     font-size: 1em;
+}
+
+
+// Nex page
+.pagination.listingBar a {
+    border: none !important;
+}
+.pagination.listingBar .current {
+    border-right: none;
 }

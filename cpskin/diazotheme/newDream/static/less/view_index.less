@@ -12,6 +12,18 @@ li{
         }
         #portal-globalnav a::after, .sf-with-ul::after{
             content: "\E8BB";
+            font-weight: bold;
+        }
+        .sf-with-ul::after{
+            font-size: 8px;
+            margin-left: 0;
+            float: left;
+            line-height: 21px;
+            margin-right: 12px;
+        }
+        #portal-globalnav a.activated::after, .sf-with-ul.activated::after{
+            transform: rotate(180deg);
+            float: right;
         }
         #portal-globalnav {
             background-color: transparent;
@@ -184,6 +196,8 @@ li{
                     margin-left: -89px;
                     opacity: 1;
                     float: right;
+                    position: relative;
+                    z-index: 10;
                     & .flex-caption-inner {
                         a{
                             color: @color-dark!important;
@@ -743,7 +757,9 @@ li{
 }
 
 
-
+.bloc-collection{
+    padding: 2rem 0;
+}
 .content-2 .agenda .pagecaption, .content-2 .bloc-collection:not(.element-en-evidence) .bloc-item .pagecaption {
         padding: 2rem 0;
         display: flex;
@@ -755,7 +771,7 @@ li{
 }
 .content-2 .bloc-collection:not(.element-en-evidence) .bloc-item .pageleadImage {
     border-radius: 6px;
-    box-shadow: 0 16px 38px -12px rgba(0,0,0,0.56),0 4px 25px 0px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);
+    box-shadow: 0 16px 38px -12px rgba(0,0,0,0.26),0 4px 25px 0px rgba(0,0,0,0.08),0 8px 10px -5px rgba(0,0,0,0.2);
 }
 .content-2 .indexview-categories{
 	padding: .5em 0;
@@ -774,7 +790,7 @@ li{
     .slider-unique-titre #slider-grands-dossiers{
         .flex-caption{
             border-radius: 6px;
-            box-shadow: 0 16px 38px -12px rgba(0,0,0,0.56),0 4px 25px 0px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);
+            box-shadow: 0 16px 38px -12px rgba(0,0,0,0.26),0 4px 25px 0px rgba(0,0,0,0.08),0 8px 10px -5px rgba(0,0,0,0.2);
         }
     }
 }

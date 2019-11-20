@@ -7,6 +7,9 @@ html {
 #visual-portal-wrapper{
     font-size: 1.6rem;
 }
+body div.overlay {
+    font-size: 16px!important;
+}
 *,
 *::before,
 *::after {
@@ -41,6 +44,10 @@ div.position-0 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+html body #content a:link, html body dl.portlet a:link, html body a:link, html body a:visited{
+    color: @all-link-color;
 }
 
 // FIN STYLES GENERAUX
@@ -516,6 +523,9 @@ div.formControls {
     position: absolute;
 }
 
+.icon-print, .icon-sendtomanager{
+display: none;
+}
 //AUTHENTICATED
 #edit-bar {
     font-size: 1.5rem;
