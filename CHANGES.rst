@@ -1,7 +1,20 @@
 Changelog
 =========
 
-0.1.2 (2019-10-01)
+0.1.4 (unreleased)
+------------------
+
+- General correction of the responsive (view_index.less)
+  [tlambert]
+
+- Adding javascript for parallax effect (newdream.js)
+  [tlambert]
+
+- Adjust all variables less
+  [tlambert]
+
+
+0.1.3 (2019-10-01)
 ------------------
 
 - Remove useless css
@@ -34,11 +47,6 @@ Changelog
 
 - Creation of several menu
   [tlambert]
-
-0.1.3 (unreleased)
-------------------
-
-- Nothing changed yet.
 
 
 0.1.2 (2019-05-27)
