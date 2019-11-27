@@ -106,7 +106,7 @@
          </xsl:if>
       </after>
         <before if="$is_search_in_banner" css:content-children="#cpskin-banner">
-            <div id="cpskin-slogan cpskin-slogan-inside">
+            <div id="cpskin-slogan-inside">
               <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
             </div>
             <div id="top-search">

@@ -26,10 +26,10 @@ body #visual-portal-wrapper {
 }
 
 h1, h2, h3, h4, h5, h6, #portal-globalnav li a{
-    font-family: 'Montserrat', sans-serif;
+    font-family: @font-title;
 }
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: @font-general;
 }
 
 div.width-full {
@@ -73,7 +73,6 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
     font-weight: normal;
     color: grey;
 }
@@ -110,60 +109,65 @@ h4 {
 .diagnosis {
     height: 1em;
 }
-/* >>> PRINT RSS <<<  */
-/*#content .bloc-collection-rss {
-    clear: both;
-    .rss-title {
-        margin: 0 0 1em 0;
-        display: inline-block;
-    }
-    .view-all {
-        float: right;
-        color: #828282;
-        position: relative;
-        top: -3px;
-        right: 4px;
-        &:hover{
-            color: #2980b9 !important;
-        }
-        &:after {
-            content: "\00279F";
-            font-size: 1.5em;
-            position: relative;
-            top: 2px;
-        }
-    }
-}*/
-
-/*#macros_feed {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .portletItem {
-        border: 1px solid #f2f2f2;
-        box-sizing: border-box;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        padding: 1em;
-        width: 22%;
-        margin: 0 0 3em 0;
-    }
-    .portletItemDetails { 
-        color: #808080;
-        font-family: arial;
-        font-size: 14px;
-        margin-left: 0;
-    }
-}*/
 
 /* Cookies */
 .cc-cookies {
-    position: relative !important;
-}
-
-.cc-cookies a, .cc-cookies a:hover {
-    margin: 0 0.5em;
+    position: fixed !important;
+    margin: 0 auto;
+    max-width: 850px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.975);
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+    box-shadow: 0 -3px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+    text-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    font-weight: 400;
+    color: @color-dark;
+    padding:1.5em 1.5rem;
+    a{
+        display: inline-block;
+        order: 2;
+        color: @color-dark;
+    }
+    a[href$='/cookies-page']{
+        &:hover{
+            opacity: .8;
+            color: @color-dark;
+        }
+    }
+    p{
+        color: @color-dark;
+    }
+    span{
+        font-family: @font-title;
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    .cc-cookie-accept{
+        display: block!important;
+        max-width: 250px ;
+        margin: 10rem auto 1rem auto;
+        order: 1!important;
+        background: @button-bg!important;
+        position: relative;
+        &:before{
+            content: "\EC75";
+            position: absolute;
+            font-family: fontello;
+            left: 50%;
+            transform: translate(-50%); 
+            top: -72px;
+            color:#000;
+            font-size: 40px;
+        }
+    }
 }
 /* Fin cookies */
 
@@ -529,4 +533,11 @@ display: none;
 //AUTHENTICATED
 #edit-bar {
     font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 800px){
+    body{
+        padding: 0!important;
+    }
 }

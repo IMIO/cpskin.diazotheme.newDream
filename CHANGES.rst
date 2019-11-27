@@ -4,7 +4,17 @@ Changelog
 0.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adding several variables
+  [tlambert]
+
+- Adding several variables
+  [tlambert]
+
+- New icon in fontello
+  [tlambert]
+
+- Style of accept cookies modal
+  [tlambert]
 
 
 0.1.4 (2019-11-20)
