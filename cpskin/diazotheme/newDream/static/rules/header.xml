@@ -120,17 +120,6 @@
               </div>
             </div>
         </before>
-        <after css:content="#portal-globalnav li:last-child">
-         <xsl:if test="$is_search_in_banner">
-            <li class="visible-search">
-                 <a href="#"  class="btn-search">
-                    <span class="ico-search"></span>
-                    <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
-                                         mode="raw"/>
-                </a>
-            </li>
-         </xsl:if>
-        </after>
 
       <drop css:content="#minisite-search" />
 

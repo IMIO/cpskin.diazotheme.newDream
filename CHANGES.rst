@@ -4,6 +4,9 @@ Changelog
 0.1.5 (unreleased)
 ------------------
 
+- Fix search when configured in banner
+  [laulaz]
+
 - Fix search duplication (don't use portal-logo is anymore) : WEB-3123
   [laulaz]
 
