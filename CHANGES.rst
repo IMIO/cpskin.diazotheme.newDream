@@ -15,6 +15,11 @@ Changelog
 
 - Style of accept cookies modal
   [tlambert]
+- Fix search when configured in banner
+  [laulaz]
+
+- Fix search duplication (don't use portal-logo is anymore) : WEB-3123
+  [laulaz]
 
 
 0.1.4 (2019-11-20)
