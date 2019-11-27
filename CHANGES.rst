@@ -4,7 +4,8 @@ Changelog
 0.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix search duplication (don't use portal-logo is anymore) : WEB-3123
+  [laulaz]
 
 
 0.1.4 (2019-11-20)
