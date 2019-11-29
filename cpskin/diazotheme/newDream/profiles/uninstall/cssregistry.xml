@@ -5,4 +5,8 @@
     id="++theme++cpskin.diazotheme.newDream/css/styles.css"
     remove="True" />
 
+<stylesheet title="cpskin.diazotheme.newDream menu_newdream"
+    id="++theme++cpskin.diazotheme.newDream/css/menu_newdream.css"
+    remove="True" />
+
 </object>

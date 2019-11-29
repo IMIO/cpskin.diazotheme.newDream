@@ -3,7 +3,5 @@
 
     <javascript id="++theme++cpskin.diazotheme.newDream/js/newdream.js"
                 remove="True" />
-    <javascript id="++theme++cpskin.diazotheme.newDream/js/testpath.js"
-                remove="True" />
-
+                
 </object>

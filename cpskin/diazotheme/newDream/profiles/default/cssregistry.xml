@@ -10,4 +10,13 @@
     applyPrefix="True"
     insert-before="ploneCustom.css" />
 
+<stylesheet title="cpskin.diazotheme.newDream menu_newdream"
+    id="++theme++cpskin.diazotheme.newDream/css/menu_newdream.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1"
+    expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.newDream'"
+    applyPrefix="True"
+    insert-before="menu_mobile.css" />
+
 </object>
