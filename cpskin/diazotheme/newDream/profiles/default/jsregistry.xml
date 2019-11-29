@@ -6,4 +6,23 @@
                 enabled="True" expression="" inline="False"
                 insert-before="collective.js.jqueryui.custom.min.js"
                 />
+
+    <javascript id="++theme++cpskin.diazotheme.newDream/js/TweenMax.min.js"
+                cacheable="True" compression="safe" cookable="True"
+                enabled="True" expression="" inline="False"
+                insert-before="http://maps.stamen.com/js/tile.stamen.js"
+                />
+
+    <javascript id="++theme++cpskin.diazotheme.newDream/js/ScrollMagic.min.js"
+                cacheable="True" compression="safe" cookable="True"
+                enabled="True" expression="" inline="False"
+                insert-before="http://maps.stamen.com/js/tile.stamen.js"
+                />
+
+    <javascript id="++theme++cpskin.diazotheme.newDream/js/animation.gsap.min.js"
+                cacheable="True" compression="safe" cookable="True"
+                enabled="True" expression="" inline="False"
+                insert-before="http://maps.stamen.com/js/tile.stamen.js"
+                />
+
 </object>

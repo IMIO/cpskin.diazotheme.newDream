@@ -3,5 +3,14 @@
 
     <javascript id="++theme++cpskin.diazotheme.newDream/js/newdream.js"
                 remove="True" />
+
+    <javascript id="++theme++cpskin.diazotheme.newDream/js/animation.gsap.min.js"
+                remove="True" />
+
+    <javascript id="++theme++cpskin.diazotheme.newDream/js/ScrollMagic.min.js"
+                remove="True" />
+
+    <javascript id="++theme++cpskin.diazotheme.newDream/js/TweenMax.min.js"
+                remove="True" />
                 
 </object>
