@@ -72,7 +72,7 @@
 
  <stylesheet title="cpskin.diazotheme.newDream LESS Mobile Styles"
     id="++theme++cpskin.diazotheme.newDream/less/mobile.less"
-    media="handheld, screen and (max-device-width: 480px), screen and (max-width: 480px)"
+    media="handheld, screen and (max-width: 480px)"
     enabled="1"
     rendering="link"
     applyPrefix="True"
@@ -82,7 +82,7 @@
 
  <stylesheet title="cpskin.diazotheme.newDream LESS Medium Mobile Styles"
     id="++theme++cpskin.diazotheme.newDream/less/mobilemedium.less"
-    media="handheld, screen and (min-device-width: 481px) and (max-device-width: 768px), screen and(min-width: 481px) and (max-width: 768px)"
+    media="handheld, screen and (min-width: 481px) and (max-width: 768px)"
     enabled="1"
     rendering="link"
     applyPrefix="True"
@@ -92,7 +92,7 @@
 
  <stylesheet title="cpskin.diazotheme.newDream LESS Large Mobile Styles"
     id="++theme++cpskin.diazotheme.newDream/less/mobilelarge.less"
-    media="handheld, screen and (min-device-width: 769px) and (max-device-width: 1024px), screen and(min-width: 769px) and (max-width: 1024px)"
+    media="handheld, screen and (min-width: 769px) and (max-width: 1024px)"
     enabled="1"
     rendering="link"
     applyPrefix="True"
@@ -102,7 +102,7 @@
 
  <stylesheet title="cpskin.diazotheme.newDream LESS Full Mobile Styles"
     id="++theme++cpskin.diazotheme.newDream/less/mobilefull.less"
-    media="handheld, screen and (min-device-width: 1025px), screen and(min-width: 1025px)"
+    media="handheld, screen and (min-width: 1025px)"
     enabled="1"
     rendering="link"
     applyPrefix="True"
