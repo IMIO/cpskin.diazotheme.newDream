@@ -1,18 +1,130 @@
 
 /* --- messagesviewlets --- */
-#messagesviewlet .close-button {
-    visibility: hidden;
-    &:before {
-        content: "\e86d";
-        font-family: fontello;
-        visibility: visible;
-        border-radius: 50%;
+#messagesviewlet{
+    & dl{
+        background: transparent;
+        display: flex;
+        border: none;
+        font-size: 16px;
+        margin: 0;
+        flex-direction: column;
+        position: relative;
         background: #fff;
-        padding: 0.5em;
-        box-sizing: border-box;
+        padding: 1.5rem 0;
+        // box-shadow: 0 -3px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+        z-index: 99;
+        position: relative;
+        border-bottom: 1px solid #dbdbdb;
+        box-shadow: 0px 13px 21px -7px rgba(0,0,0,0.33);
+        &.messagesviewlet-info{
+            &:before{
+                background:#0451aa;
+            }
+            &::after{
+                content: "i";
+                background: #0451aa;
+            }
+        }
+        &.messagesviewlet-significant{
+            &:before{
+                background:#ff9b00;
+            }
+            &::after{
+                content: "!";
+                background: #ff9b00;
+            }
+        }
+        &.messagesviewlet-warning{
+            &:before{
+                background:#d52509;
+            }
+            &::after{
+                content: "!";
+                height: 0px;
+                border-style: solid;
+                border-width: 0 15px 30px 16px;
+                border-color: transparent transparent#f62200;
+                border-radius: 0 !important;
+                display: flex;
+                justify-content: space-around;
+            }
+        }   
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 6px;
+            top: 0;
+            bottom: 0;
+        }
+        &::after{
+            color:#fff;
+            left: 5rem;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 22px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        dt{
+            float: none;
+            background: transparent;
+            padding: 0 10rem;
+            color: rgb(22, 22, 22);
+        }
+        dd{
+            float: none;
+            background: transparent;
+            margin: 0;
+            padding: 0 10rem;
+            max-width: 1200px;
+        }
+        .close-button{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            &:before{
+                content: "\E8CF";
+                font-size: 35px;
+                background: transparent;
+            }
+        }
+    }
+    .close-button {
+        visibility: hidden;
+        &:before {
+            content: "\e86d";
+            font-family: fontello;
+            visibility: visible;
+            border-radius: 50%;
+            background: #fff;
+            padding: 0.5em;
+            box-sizing: border-box;
+        }
     }
 }
 
+@media screen and (max-width: 900px){
+    #messagesviewlet{
+    & dl{
+        dt{
+            padding: 0 6rem;
+        }
+        dd{
+            padding: 0 6rem;
+        }
+        &::after{
+            left: 2rem;
+        }
+    }
+
+}
+}
 //HEADER
 #top-actions{
     background: @header-actions;
