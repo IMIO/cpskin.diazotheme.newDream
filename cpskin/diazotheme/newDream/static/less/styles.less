@@ -28,8 +28,111 @@ body #visual-portal-wrapper {
 h1, h2, h3, h4, h5, h6, #portal-globalnav li a{
     font-family: @font-title;
 }
+
+body:not(.main-homepage) #content{
+    h1{
+      font-size: 3.463rem;
+      }
+    h2{
+      font-size: 2.815rem;
+      color:#333;
+      }
+    h3{
+      font-size: 2.289rem;
+      color:#333;
+      }
+    h4{
+      font-size: 1.861rem;
+      color:#333;
+      }
+   }
+   body:not(.main-homepage){
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.3em;
+        margin-bottom: 1.75rem;
+        font-weight:normal;
+    }
+}
+   body:not(.main-homepage) h2, body:not(.main-homepage) h3,  body:not(.main-homepage) h4, body:not(.main-homepage) h5, body:not(.main-homepage) h6 {
+       margin-top: 2.5rem;
+   }
+
 body{
     font-family: @font-general;
+}
+
+#activity, .contact-ttwfields, .addnewcontactfromorganization, div#organization-photos {
+    width: 100%;
+}
+#logo, .related-contact.logo {
+    float: left;
+}
+
+#content {
+    font-size: 1.8rem;
+}
+@media screen and (min-width:860px){
+    .portaltype-organization .width-full #activity,
+    .width-full #viewlet-above-content-body {
+        width: 75%;
+    }
+}
+#before-activity {
+    background: transparent;
+    padding: 0;
+    margin:1rem 0 4rem;
+    #contact-schedule {
+        border-left: 2px solid gray;
+        padding-left: 1.5rem;
+        div.schedule-widget-day{
+            width: auto;
+            float: left;
+            clear: both;
+            border-top-width: 0px;
+            .title {
+                box-sizing: border-box;
+                font-weight: normal;
+                margin-right: 2em;
+            }
+           .morningend {
+               margin-right: 2em;
+            }
+        }
+        .contact-details {
+            float: none;
+            p {
+                margin-bottom: 0.5rem;
+                &#fax::after {
+                    content: "(fax)";
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
+#aboveContentContact .coordinates {
+    background:transparent;
+    display: inline-block;
+    margin: 2em 0em;
+    padding: 0 0 0 1.5rem;
+    border-left: 2px solid gray;
+    div.schedule-widget-day {
+        border-top: 0px dotted #dfdfdf;
+    }
+}
+.portaltype-document .documentDescription {
+    display: none;
+}
+
+#breadcrumbs-you-are-here {
+    width: 0px;
+    overflow: hidden;
+    float: left;
+    height: 1px;
+}
+
+#portal-breadcrumbs span:last-child::after {
+    display: none;
 }
 
 div.width-full {

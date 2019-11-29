@@ -7,19 +7,29 @@ Changelog
 - Adding several variables
   [tlambert]
 
-- Adding several variables
-  [tlambert]
-
 - New icon in fontello
   [tlambert]
 
 - Style of accept cookies modal
   [tlambert]
+
 - Fix search when configured in banner
   [laulaz]
 
 - Fix search duplication (don't use portal-logo is anymore) : WEB-3123
   [laulaz]
+
+- Style of messageviewlet
+  [tlambert]
+
+- Changing menu less location for transform Newdream menu mobile (now the files are in Newdream theme)
+  [tlambert]
+
+- Changing media queries declaration for mobile.less
+  [tlambert]
+
+- Adding javascript file ScrollMagic.min.js
+  [tlambert]
 
 
 0.1.4 (2019-11-20)
