@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.5 (unreleased)
+0.1.5 (2019-12-02)
 ------------------
 
 - Adding several variables
@@ -31,6 +31,10 @@ Changelog
 - Adding javascript file ScrollMagic.min.js
   [tlambert]
 
+- Fix search bar for mobile : WEB-3235
+  [tlambert]
+
+- Style for evenent view : WEB-3214
 
 0.1.4 (2019-11-20)
 ------------------
