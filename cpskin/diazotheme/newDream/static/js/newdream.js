@@ -1,8 +1,8 @@
 // jquery for search button in navigation 
 
 $( document ).ready(function() {
-       $( ".btn-search" ).click(function(e) {
-        $( "#hidden-search" ).slideToggle(
+       $( ".btn-search , #search-btn" ).click(function(e) {
+        $( "#hidden-search").slideToggle(
         "fast",
         function () {
                $("#searchGadget").focus();
