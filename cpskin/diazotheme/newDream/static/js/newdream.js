@@ -26,11 +26,11 @@ $( document ).ready(function() {
 
 //Custom-menu Newdream
 
-$( function() {
-  $( "#search-btn" ).on( "click", function() {
-    $( "#top-navigation-inner" ).toggleClass( "justifyNav");
-  });
-});
+// $( function() {
+//   $( "#search-btn" ).on( "click", function() {
+//     $( "#top-navigation-inner" ).toggleClass( "justifyNav");
+//   });
+// });
 $(document).ready(function(){
   $("#portal-globalnav ul li a:first-child").click(function(){
       var indexLi = $(this).parent().index();
@@ -47,31 +47,30 @@ $(document).ready(function(){
 
 //parallax Newdream
 
-$(document).ready(function(){
+ $(document).ready(function(){
+   var controller = new ScrollMagic.Controller();
+   new ScrollMagic.Scene({
+     triggerElement: "#cpskin-banner",
+     triggerHook: "onEnter",
+   })
+   .duration('200%')
+   .setTween("#cpskin-banner >  img", {
+     y: "80%", 
+     ease: Linear.easeNone
+   })
+   .addTo(controller);
 
-  var controller = new ScrollMagic.Controller();
-  new ScrollMagic.Scene({
-    triggerElement: "#cpskin-banner",
-    triggerHook: "onEnter",
-  })
-  .duration('200%')
-  .setTween("#cpskin-banner >  img", {
-    y: "80%", 
-    ease: Linear.easeNone
-  })
-  .addTo(controller);
-
+  });
 
 // Parallax slider
-new ScrollMagic.Scene({
-        triggerElement: ".slider-unique-titre",
-        triggerHook: "onEnter",
-    })
-    .duration('200%')
-    .setTween("#slider-grands-dossiers .flex-active-slide .flex-caption", {
-        y: "-60%",
-        ease: Linear.easeNone
-    })
-    //.addIndicators() // for debugging purposes
-    .addTo(controller);
-});
+// new ScrollMagic.Scene({
+//         triggerElement: ".slider-unique-titre",
+//         triggerHook: "onEnter",
+//     })
+//     .duration('200%')
+//     .setTween("#slider-grands-dossiers .flex-active-slide .flex-caption", {
+//         y: "-60%",
+//         ease: Linear.easeNone
+//     })
+//     //.addIndicators() // for debugging purposes
+//     .addTo(controller);
