@@ -2,7 +2,7 @@
 <object name="portal_javascripts">
 
     <javascript id="++theme++cpskin.diazotheme.newDream/js/newdream.js"
-                cacheable="True" compression="none" cookable="True"
+                cacheable="True" compression="safe" cookable="True"
                 enabled="True" expression="" inline="False"
                 insert-before="collective.js.jqueryui.custom.min.js"
                 />
