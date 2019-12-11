@@ -4,7 +4,20 @@ Changelog
 0.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Restore 'scroll-to-top' JS code
+  [laulaz]
+
+- Fix duplicate searches & hide search in portal mode : WEB-3241
+  [laulaz]
+
+- Add missing Diazo parameters (from cpskin.theme)
+  [laulaz]
+
+- Move 'scroll-to-top' button to ease styling : WEB-3241
+  [laulaz]
+
+- Add new theme-specific option to show breadcrumbs above/below title : WEB-3241
+  [laulaz]
 
 
 0.1.5 (2019-12-02)

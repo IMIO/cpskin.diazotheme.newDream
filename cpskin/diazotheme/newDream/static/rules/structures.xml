@@ -20,6 +20,7 @@
   </replace>
 
   <replace css:content="#portal-footer-wrapper">
+      <div id="scroll-to-top"><a href="#top"></a></div>
       <footer id="portal-footer-wrapper">
           <div class="row">
           <xsl:if test="not($isinminisitemode)">
@@ -37,6 +38,5 @@
           <xsl:copy-of select="./@*"/>
           <xsl:apply-templates select="./*"/>
       </article>
-      <div id="scroll-to-top"><a href="#top"></a></div>
   </replace>
 </rules>

@@ -23,4 +23,23 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <!-- Upgrades -->
+    <genericsetup:upgradeStep
+        title="CPSKIN Diazotheme NewDream: upgrade to v2"
+        description="Add breadcrumbs_below_title option to registry and manifest"
+        handler=".upgradehandlers.add_breadcrumbs_below_title_option"
+        source="1"
+        destination="2"
+        profile="cpskin.diazotheme.newDream:default"
+        />
+
+    <genericsetup:upgradeStep
+        title="CPSKIN Diazotheme NewDream: upgrade to v3"
+        description="Add missing theme parameters (from cpskin.theme)"
+        handler=".upgradehandlers.add_missing_parameters"
+        source="2"
+        destination="3"
+        profile="cpskin.diazotheme.newDream:default"
+        />
+
 </configure>

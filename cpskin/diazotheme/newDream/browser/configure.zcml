@@ -5,6 +5,25 @@
            xmlns:browser="http://namespaces.zope.org/browser"
            i18n_domain="cpskin">
 
+    <adapter factory=".controlpanel.NewDreamControlPanelAdapter" />
+
+    <browser:page
+        name="cpskin-controlpanel"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.NewDreamControlPanel"
+        permission="cpskin.siteadministrator"
+        layer="cpskin.diazotheme.newDream.interfaces.ICPSkinNewDreamLayer"
+        />
+
+    <browser:page
+        name="is_breadcrumbs_below_title"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="is_breadcrumbs_below_title"
+        permission="zope2.View"
+        layer="cpskin.diazotheme.newDream.interfaces.ICPSkinNewDreamLayer"
+        />
+
     <browser:page
         for="plone.event.interfaces.IEvent"
         name="event_view"
