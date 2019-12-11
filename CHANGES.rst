@@ -4,6 +4,9 @@ Changelog
 0.1.6 (unreleased)
 ------------------
 
+- Move 'scroll-to-top' button to ease styling : WEB-3241
+  [laulaz]
+
 - Add new theme-specific option to show breadcrumbs above/below title : WEB-3241
   [laulaz]
 
