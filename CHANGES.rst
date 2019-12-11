@@ -3,6 +3,9 @@ Changelog
 
 0.1.6 (unreleased)
 ------------------
+- Style of view portal-column
+  [tlambert]
+
 - Fix potal-column in responsive
   [tlambert]
 
