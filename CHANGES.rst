@@ -3,6 +3,8 @@ Changelog
 
 0.1.6 (unreleased)
 ------------------
+- Fix potal-column in responsive
+  [tlambert]
 
 - Restore 'scroll-to-top' JS code
   [laulaz]
