@@ -5,11 +5,21 @@
   <before css:content="#portal-top">
     <xsl:copy-of select="//*[@id='messagesviewlet']" />
   </before>
-  <after css:content-children="#portal-top > div">
-    <div id="container-portal-breadcrumbs">
-        <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
-    </div>
-  </after>
+
+  <rules if-not="$is_breadcrumbs_below_title">
+    <after css:content-children="#portal-top > div">
+      <div id="container-portal-breadcrumbs">
+          <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
+      </div>
+    </after>
+  </rules>
+
+  <rules if="$is_breadcrumbs_below_title">
+    <after css:content="#content h1.documentFirstHeading">
+      <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
+    </after>
+  </rules>
+
   <after css:content="#portal-top">
     <xsl:copy-of select="//div[contains(@class, 'slider-top')]" />
   </after>

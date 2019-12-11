@@ -6,6 +6,8 @@
     <value>False</value>
   </record>
 
+  <records interface="cpskin.diazotheme.newDream.interfaces.INewDreamSettings" />
+
   <record name="cpskin.core.socialviewlet">
     <value></value>
   </record>

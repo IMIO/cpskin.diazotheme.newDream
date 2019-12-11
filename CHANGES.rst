@@ -4,7 +4,8 @@ Changelog
 0.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add new theme-specific option to show breadcrumbs above/below title : WEB-3241
+  [laulaz]
 
 
 0.1.5 (2019-12-02)
