@@ -33,4 +33,13 @@
         profile="cpskin.diazotheme.newDream:default"
         />
 
+    <genericsetup:upgradeStep
+        title="CPSKIN Diazotheme NewDream: upgrade to v3"
+        description="Add missing theme parameters (from cpskin.theme)"
+        handler=".upgradehandlers.add_missing_parameters"
+        source="2"
+        destination="3"
+        profile="cpskin.diazotheme.newDream:default"
+        />
+
 </configure>

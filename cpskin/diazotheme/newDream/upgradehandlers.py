@@ -34,3 +34,14 @@ def add_breadcrumbs_below_title_option(context):
         'is_breadcrumbs_below_title',
         'context/@@is_breadcrumbs_below_title'
     )
+
+
+def add_missing_parameters(context):
+    add_theme_parameter_expression(
+        'is_folder_view',
+        'context/@@is_folder_view'
+    )
+    add_theme_parameter_expression(
+        'is_in_portal_mode',
+        'context/@@isInPortalMode'
+    )

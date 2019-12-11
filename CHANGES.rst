@@ -4,6 +4,9 @@ Changelog
 0.1.6 (unreleased)
 ------------------
 
+- Add missing Diazo parameters (from cpskin.theme)
+  [laulaz]
+
 - Move 'scroll-to-top' button to ease styling : WEB-3241
   [laulaz]
 
