@@ -4,6 +4,9 @@ Changelog
 0.1.6 (unreleased)
 ------------------
 
+- Fix duplicate searches & hide search in portal mode : WEB-3241
+  [laulaz]
+
 - Add missing Diazo parameters (from cpskin.theme)
   [laulaz]
 

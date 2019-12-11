@@ -168,33 +168,42 @@
             <div id="minisite-navigation-inner">
                 <div id="minisite-logo-nav">
                     <xsl:copy-of select="//*[@id='minisite-logo']" />
-                    <div id="minisite-globalnav">
-                      <ul>
-                          <xsl:apply-templates css:select="#minisite-globalnav li" />
-                          <xsl:if test="$is_search_in_navigation">
+
+                    <xsl:if test="//*[@id='minisite-globalnav']/li">
+                      <div id="minisite-globalnav">
+                        <ul>
+                            <xsl:apply-templates css:select="#minisite-globalnav li" />
+                            <xsl:if test="$is_search_in_navigation and not($is_in_portal_mode)">
+                              <li id="search-action">
+                                <a href="#" class="btn-search">
+                                  <span class="ico-search"></span>
+                                  <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
+                                       mode="raw"/>
+                                  </a>
+                                </li>
+                              </xsl:if>
+                        </ul>
+                      </div>
+                    </xsl:if>
+
+                    <xsl:if test="//*[@class='minisite-dropdown-menu']/ul/li">
+                      <div class="minisite-dropdown-menu">
+                        <xsl:copy-of select="//*[@class='minisite-dropdown-menu']/a" />
+                        <ul class="navTree navTreeLevel0">
+                          <xsl:copy-of select="//*[@class='minisite-dropdown-menu']/ul/li" />
+                          <xsl:if test="not($is_in_portal_mode)">
                             <li id="search-action">
                               <a href="#" class="btn-search">
                                 <span class="ico-search"></span>
                                 <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
-                                  mode="raw"/>
-                                </a>
-                              </li>
-                            </xsl:if>
-                      </ul>
-                    </div>
-                    <div class="minisite-dropdown-menu">
-                      <xsl:copy-of select="//*[@class='minisite-dropdown-menu']/a" />
-                      <ul class="navTree navTreeLevel0">
-                      <xsl:copy-of select="//*[@class='minisite-dropdown-menu']/ul/li" />
-                      <li id="search-action">
-                        <a href="#" class="btn-search">
-                          <span class="ico-search"></span>
-                          <xsl:apply-templates select="document('/@@theme-fragment/search')/*"
-                            mode="raw"/>
-                        </a>
-                      </li>
-                      </ul>
-                    </div>
+                                     mode="raw"/>
+                              </a>
+                            </li>
+                          </xsl:if>
+                        </ul>
+                      </div>
+                    </xsl:if>
+
                 </div>
             </div>
             <xsl:if test="$is_search_in_navigation">
