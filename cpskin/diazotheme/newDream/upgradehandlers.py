@@ -24,7 +24,7 @@ def add_breadcrumbs_below_title_option(context):
             required=False,
             default=False,
         ),
-        value=True,
+        value=False,
     )
     records[
         "cpskin.diazotheme.newDream.interfaces.INewDreamSettings.breadcrumbs_below_title"
