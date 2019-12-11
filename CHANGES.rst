@@ -4,6 +4,9 @@ Changelog
 0.1.6 (unreleased)
 ------------------
 
+- Restore 'scroll-to-top' JS code
+  [laulaz]
+
 - Fix duplicate searches & hide search in portal mode : WEB-3241
   [laulaz]
 
