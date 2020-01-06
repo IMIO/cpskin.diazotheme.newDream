@@ -1,7 +1,13 @@
 Changelog
 =========
 
-0.1.6 (unreleased)
+0.1.7 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+0.1.6 (2019-12-11)
 ------------------
 - Style of view portal-column
   [tlambert]
