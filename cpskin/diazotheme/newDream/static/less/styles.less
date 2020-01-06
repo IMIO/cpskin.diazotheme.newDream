@@ -516,11 +516,14 @@ div.formControls {
 }
 #scroll-to-top{
     text-align: right;
-    right: 0;
+    right: 20px;
     visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
     a{
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         display: block;
         position: relative;
         margin-left: auto;
@@ -529,8 +532,7 @@ div.formControls {
             font-family: fontello;
             visibility: visible;
             border: solid 2px;
-            padding: 1rem; 
-            font-size: 25px;   
+            font-size: 20px;   
             border-radius: 4px;   
             font-weight: bold;      
             visibility: visible;         
@@ -541,7 +543,7 @@ div.formControls {
             bottom: 0;       
             text-align: center;
             vertical-align: middle;        
-            line-height: 52px;
+            line-height: 50px;
         }
     }
 }

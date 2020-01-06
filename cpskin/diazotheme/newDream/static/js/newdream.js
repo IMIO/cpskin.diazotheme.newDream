@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
   $(function () {
       $(window).scroll(function () {
-          if ($(this).scrollTop() > 300) {
+          if ($(this).scrollTop() > 600) {
               $('#scroll-to-top').fadeIn();
           } else {
               $('#scroll-to-top').fadeOut();
@@ -43,15 +43,6 @@ $( document ).ready(function() {
 });
 
 
-
-
-//Custom-menu Newdream
-
-// $( function() {
-//   $( "#search-btn" ).on( "click", function() {
-//     $( "#top-navigation-inner" ).toggleClass( "justifyNav");
-//   });
-// });
 $(document).ready(function(){
   $("#portal-globalnav ul li a:first-child").click(function(){
       var indexLi = $(this).parent().index();
@@ -83,15 +74,3 @@ $(document).ready(function(){
 
   });
 
-// Parallax slider
-// new ScrollMagic.Scene({
-//         triggerElement: ".slider-unique-titre",
-//         triggerHook: "onEnter",
-//     })
-//     .duration('200%')
-//     .setTween("#slider-grands-dossiers .flex-active-slide .flex-caption", {
-//         y: "-60%",
-//         ease: Linear.easeNone
-//     })
-//     //.addIndicators() // for debugging purposes
-//     .addTo(controller);
