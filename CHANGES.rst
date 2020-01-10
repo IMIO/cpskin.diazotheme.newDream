@@ -4,7 +4,8 @@ Changelog
 0.1.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix toggle event fuction. Add event.stopImmediatePropagation().
+  [tlambert]
 
 
 0.1.6 (2019-12-11)
