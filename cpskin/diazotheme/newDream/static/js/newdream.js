@@ -61,7 +61,7 @@ $(document).ready(function(){
    var controller = new ScrollMagic.Controller();
    new ScrollMagic.Scene({
      triggerElement: "#cpskin-banner",
-     triggerHook: "onEnter",
+     triggerHook: "0",
    })
    .duration('200%')
    .setTween("#cpskin-banner >  img", {
