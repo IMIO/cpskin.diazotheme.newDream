@@ -184,6 +184,11 @@
     float: none;
     display: inline-block;
     font-size: 100%;
+    width: 80%;
+    max-width: 450px;
+    #searchGadget{
+        padding: 0 4rem;
+    }
 }
 
 #top-search-logo-inner a:focus img {
@@ -225,10 +230,12 @@ body #hidden-search {
     display: inline-block;
     position: relative;
     width: 100%;
+    background: #fff;
+    border-radius: 5px;
     #searchGadget {
         margin-right: 0;
         color:#585858;
-        font-size: 1.5em;
+        font-size: 19px;
         height: 60px;
         border: none;
         width: 93%;
@@ -320,12 +327,13 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     background-color: white;
     border: 0.1em solid #f2f2f2;
     margin: 2em 0 0 -7em;
-    padding: 2em 0.5em 0.5em;
+    padding: 2em 0;
 }
 #cpskin-banner #top-search {
     position: absolute;
     width: 100%;
-    bottom: 5em;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
 }
 /* --- fin logo et search --- */
@@ -663,10 +671,6 @@ li.sfHover > span > a {
     margin: 0.5em 0.5em 0 0.5em;
 }
 
-.sf-menu ul.direct_access {
-    background-color: #ededed !important;
-}
-
 #portal-footer-wrapper{
     position:relative;
     clear:both;
@@ -960,9 +964,7 @@ div#mobile-first-level-wrapper a {
         background: @sub1-menu-bg;
     }
 }
-.sf-menu ul.direct_access{
-    background: @sub2-menu-bg !important;
-}
+
 
 
 // Navigation mobile

@@ -95,7 +95,7 @@
             }
         }
         #cpskin-banner{
-            background-image: linear-gradient(to bottom,#051937d9,transparent,transparent ,transparent);
+            background-image: linear-gradient(to bottom,#000000d9,transparent,transparent ,transparent);
             & img{
                 position: relative;
                 z-index: -1;
@@ -471,6 +471,9 @@
 
 @media screen and (min-width:900px){
     .header-2 {
+        #portaltab-search{
+            order: 2;
+        }
         #portal-header{
             position: absolute;
             width: 100%;
@@ -594,8 +597,6 @@
                     border-left: none;
                 }
                 > li{
-                    &.sfHover > span > a {
-                    }
                     & > span > a{
                         padding: 1.5em 0.75em !important;
                         margin: 0;
@@ -603,7 +604,8 @@
                             background: @color-light-2;
                         }
                         &:focus {
-                            background: @color-light-2; 
+                            background: @color-light-2;
+                            border-radius: 0;
                         }
                     }
                 }
@@ -611,8 +613,6 @@
             &.navTreeLevel1{
                 margin-top: 0;
                 background-color: @color-light-2;
-                &.has_direct_access{
-                }
                 &.direct_access {
                     width: 25%!important;
                     border: solid 1px @color-light-2!important;
