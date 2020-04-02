@@ -8,6 +8,38 @@
         }
 }
 
+#toggle-video{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 0;
+    background: transparent;
+    border: 0px;
+    &::after{
+        content: "";
+        height: 20px;
+        width: 20px;
+        display: block;
+    }
+    &.video-play{
+        &::after{
+            background: url("/++theme++cpskin.diazotheme.newDream/pause.svg") no-repeat;
+            background-size: contain;
+        }
+    }
+    &.video-pause{
+        &::after{
+            background: url("/++theme++cpskin.diazotheme.newDream/play.svg")no-repeat;
+            background-size: contain;
+        }
+    }
+}
+@media screen and (max-width:1280px){
+    #toggle-video{
+        top: 170px;
+    }
+}
  #cpskin-slogan{
      display: none;
  }

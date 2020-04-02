@@ -72,3 +72,24 @@ $(document).ready(function(){
 
   });
 
+  //Pause video 
+
+ $(document).ready(function(){
+  video = document.getElementById("banner-video");
+  $('#toggle-video').click(function() {
+    if (video.paused == false) {
+        video.pause();
+        $( "#toggle-video" ).removeClass( "video-play" );
+        $( "#toggle-video" ).addClass( "video-pause" ).html("Pause");
+    } else {
+        video.play();
+        $( "#toggle-video" ).removeClass( "video-pause" );
+        $( "#toggle-video" ).addClass( "video-play" ).html("Play");
+    }
+  });
+  if(video){
+
+  }
+
+ });
+
