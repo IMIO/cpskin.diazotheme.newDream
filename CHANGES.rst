@@ -4,7 +4,14 @@ Changelog
 0.1.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add style for banner video and play pause btn
+  [tlambert]
+
+- Fix serveral bug in less navigation
+  [tlambert]
+
+- Add custom slider style
+  [tlambert]
 
 
 0.1.7 (2020-01-10)
