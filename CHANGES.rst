@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.8 (unreleased)
+0.1.8 (2020-04-15)
 ------------------
 
 - Add style for banner video and play pause btn
