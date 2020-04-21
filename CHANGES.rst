@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.9 (unreleased)
+0.1.9 (2020-04-21)
 ------------------
 
 - Fix responsive banner height.
