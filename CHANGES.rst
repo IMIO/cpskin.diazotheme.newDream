@@ -1,10 +1,17 @@
 Changelog
 =========
 
-0.1.9 (unreleased)
-------------------
+0.1.10 (unreleased)
+-------------------
 
 - Nothing changed yet.
+
+
+0.1.9 (2020-04-21)
+------------------
+
+- Fix responsive banner height.
+  [tlambert]
 
 
 0.1.8 (2020-04-15)
