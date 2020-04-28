@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.1.11 (unreleased)
+-------------------
+
+- Nothing changed yet.
+
+
 0.1.10 (2020-04-28)
 -------------------
 - Optimization of the banner for a better adaptation in responsive
