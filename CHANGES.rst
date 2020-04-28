@@ -3,8 +3,11 @@ Changelog
 
 0.1.10 (unreleased)
 -------------------
+- Optimization of the banner for a better adaptation in responsive
+  [thomlamb]
 
-- Nothing changed yet.
+- Add arrows svg for slick slider
+  [thomlamb]
 
 
 0.1.9 (2020-04-21)
