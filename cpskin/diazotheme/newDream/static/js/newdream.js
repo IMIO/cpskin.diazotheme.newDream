@@ -19,34 +19,47 @@ $( document ).ready(function() {
       });
   });
   $("#scroll-to-top").hide();
-       $( ".btn-search , #search-btn" ).click(function(e) {
-        $( "#hidden-search").slideToggle(
-        "fast",
-        function () {
-               $("#searchGadget").focus();
-           });
-         e.preventDefault();
-        });
-       
-       $("#portal-globalnav a[tabindex]").click(function(){
-        $("#hidden-search").hide('fast');
-       });
 
-       $(".toggle-button").click(function(event){
-         var toggle_button_id = this.id;
-         var toggle_block_id = toggle_button_id.replace("-button", "-block");
-         $("#" + toggle_block_id).toggleClass("active desactive");
-         event.stopImmediatePropagation()
-       });
+  // Toggle search
+
+    $( ".btn-search , #search-btn" ).click(function(e) {
+        e.stopPropagation();
+        $("#hidden-search").slideToggle("fast"
+        , function () {$("#searchGadget").focus(); $('#hidden-search').css('overflow','visible')}
+        );
+        e.preventDefault();
+    });
+
+    // $('.btn-search , #search-btn').click(function(e){
+    //   e.stopPropagation();
+    //   $('#hidden-search').toggle();
+    //   e.preventDefault();
+    // });
+
+    $("#hidden-search , #LSResult").on("click", function (event) {
+        event.stopPropagation();
+    });
+
+    $(document).on("click", function () {
+        $("#hidden-search").hide();
+    });
+
+  $(".toggle-button").click(function(event){
+    var toggle_button_id = this.id;
+    var toggle_block_id = toggle_button_id.replace("-button", "-block");
+    $("#" + toggle_block_id).toggleClass("active desactive");
+    event.stopImmediatePropagation()
+  });
+
 });
 
 
 $(document).ready(function(){
-  $("#portal-globalnav ul li a:first-child").click(function(){
-      var indexLi = $(this).parent().index();
-      $(".navigation-3 .portal-globalnav-cpskinmenu li:first-child").addClass( "sfHover" );
-      $(".navigation-3 .portal-globalnav-cpskinmenu li:first-child ul").css({'display': 'block', 'visibility': 'visible'});
-  });
+  // $("#portal-globalnav ul li a:first-child").click(function(){
+  //     var indexLi = $(this).parent().index();
+  //     $(".navigation-3 .portal-globalnav-cpskinmenu li:first-child").addClass( "sfHover" );
+  //     $(".navigation-3 .portal-globalnav-cpskinmenu li:first-child ul").css({'display': 'block', 'visibility': 'visible'});
+  // });
 
   $(".navigation-1 #portal-globalnav ul li a:first-child").click(function(){
       var position = $(this).offset();
@@ -87,9 +100,4 @@ $(document).ready(function(){
         $( "#toggle-video" ).addClass( "video-play" ).html("Play");
     }
   });
-  if(video){
-
-  }
-
  });
-

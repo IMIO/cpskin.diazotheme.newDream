@@ -3,8 +3,11 @@ Changelog
 
 0.1.12 (unreleased)
 -------------------
+- Make the search close when you click in the page
+  [thomlamb]
 
-- Nothing changed yet.
+- Fix focus css on search bar
+  [thomlamb]
 
 
 0.1.11 (2020-08-24)
