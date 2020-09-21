@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.12 (unreleased)
+0.1.12 (2020-09-21)
 -------------------
 - Make the search close when you click in the page
   [thomlamb]
