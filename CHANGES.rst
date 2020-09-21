@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.1.13 (unreleased)
+-------------------
+
+- Nothing changed yet.
+
+
 0.1.12 (2020-09-21)
 -------------------
 - Make the search close when you click in the page
