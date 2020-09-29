@@ -17,7 +17,9 @@
 		float: left;
 	}
 }
-
+.leaflet-container .leaflet-popup-content a:first-child {
+    float: none;
+}
 .leaflet-control-layers-overlays-0 {
 	display: block;
 	max-height: 475px;
@@ -26,8 +28,15 @@
 
 .leaflet-popup-content-wrapper {
     margin-bottom: -1px;
+    h3{
+        margin: 1rem 0!important;
+    }
 }
-
+.section-services{
+    legend {
+        padding: 3px 10px 0 0!important;
+    }
+}
 #viewlet-below-content-body {
 	& > div.relatedItems {
 		padding-top: 1em;
@@ -263,6 +272,9 @@ fieldset.citizen {
 #content #top-area .widget-fieldset.faceted-criteria {
     margin-bottom: 0;
     padding-bottom: 0;
+    legend{
+        padding: 0 10px 0 0!important;
+    }
     a > legend, #content #top-area .widget-fieldset.faceted-criteria > dl {
 	    color: #7086a6;
 	    padding: 0 1em 0em 0;
@@ -610,8 +622,8 @@ div.faceted-select2 ul{
 	input {
 		padding: 0.55em;
 		background: #fff;
-		border: 1px solid #f9f9f9 !important;
-		height: 25px;
+		border: 0px!important;
+		height: auto;
 	}
 	form{
 		position: relative;
