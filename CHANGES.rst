@@ -4,7 +4,8 @@ Changelog
 0.1.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Update form and legend css
+  [thomlamb]
 
 
 0.1.12 (2020-09-21)
