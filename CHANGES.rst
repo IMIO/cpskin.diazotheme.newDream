@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.13 (unreleased)
+0.1.13 (2020-10-27)
 -------------------
 
 - Upload to pypi
