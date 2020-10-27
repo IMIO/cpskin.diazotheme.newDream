@@ -1,6 +1,6 @@
-====================
+==========================
 cpskin.diazotheme.newDream
-====================
+==========================
 
 This is a Cpskin Diazo theme
 
@@ -24,4 +24,4 @@ Activate the diazo theme
 Screenshot
 ----------
 
-.. image:: /cpskin/diazotheme/newDream/static/preview.png
+.. image:: ./cpskin/diazotheme/newDream/static/preview.png

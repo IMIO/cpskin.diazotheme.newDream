@@ -4,6 +4,9 @@ Changelog
 0.1.13 (unreleased)
 -------------------
 
+- Upload to pypi
+  [thomlamb]
+
 - Update form and legend css
   [thomlamb]
 
