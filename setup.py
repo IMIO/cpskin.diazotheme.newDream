@@ -44,6 +44,7 @@ setup(
     install_requires=[
         'cpskin.theme',
         'setuptools',
+        'z3c.jbot',
     ],
     extras_require={
     },
