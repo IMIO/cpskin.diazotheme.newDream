@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.15 (unreleased)
+0.1.15 (2021-01-25)
 -------------------
 
 - WEB-3210: Addition of a div container for the banner image. 
