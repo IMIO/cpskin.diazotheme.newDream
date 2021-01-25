@@ -4,7 +4,15 @@ Changelog
 0.1.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- WEB-3210: Addition of a div container for the banner image. 
+  This allows the live search to be able to go beyond the banner
+  [thomlamb]
+
+- WEB-3210: Modification of the JS parrallax to work with the modifications of the banner.
+  [thomlamb]
+
+- WEB-3210: Small improvements to the themes
+  [thomlamb]
 
 
 0.1.14 (2020-12-09)
