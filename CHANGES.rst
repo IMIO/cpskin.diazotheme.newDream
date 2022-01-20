@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.17 (unreleased)
+0.1.17 (2022-01-20)
 -------------------
 
 - WEB-3210: Revert 0.1.15 changes (that were never put in production)
