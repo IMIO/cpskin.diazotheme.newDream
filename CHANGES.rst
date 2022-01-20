@@ -4,7 +4,8 @@ Changelog
 0.1.18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Revert 0.1.16 release to handle cookies viewlet in cpskin.core directly
+  [laulaz]
 
 
 0.1.17 (2022-01-20)
