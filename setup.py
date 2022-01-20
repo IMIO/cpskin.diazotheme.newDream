@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Installer for the cpskin.diazotheme.newDream package."""
 
-version = '0.1.16'
+version = '0.1.17.dev0'
 
 from setuptools import find_packages
 from setuptools import setup
